@@ -1,0 +1,40 @@
+# --- Secrets: never commit these (this repo is PUBLIC) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+client_secret*.json
+credentials*.json
+token*.json
+*.token
+
+# Claude Code per-user settings (may contain local paths / permissions)
+.claude/settings.local.json
+
+# --- Dependencies & build output ---
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+.next/
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Office lock files (e.g. while the PowerPoint is open)
+~$*
+
+# Logs
+*.log
+npm-debug.log*
+
+# NOTE: dataExports/ is intentionally NOT ignored - it is a deliverable.
