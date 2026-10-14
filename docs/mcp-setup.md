@@ -57,34 +57,37 @@ an incognito window fails with "Invalid MCP state"). So:
 4. On the consent page, check that **Select workspace** shows the TEST workspace (not
    your personal one), tick **I recognize and trust this URL**, and click **Continue**.
 
-## Gmail - Google Gmail MCP (`gmailmcp.googleapis.com`)
+## Gmail - Claude's Gmail connector (Google's official Gmail MCP server)
 
-> **Status:** Google lists this server as part of the *Google Workspace Developer Preview
-> Program*, and joining that program is a prerequisite. It is not yet in `.mcp.json`;
-> step 5 below adds it.
+Gmail is **not** in `.mcp.json`. It is connected through the Gmail connector that is
+built into Claude, which talks to Google's official Gmail MCP server
+(`gmailmcp.googleapis.com/mcp/v1`).
 
-Google's guide: <https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server>
+### Why not configure Google's server directly in `.mcp.json`?
 
-1. Using the **test** Google account, create a Google Cloud project.
-2. Enable the APIs:
-   ```bash
-   gcloud services enable gmail.googleapis.com --project=PROJECT_ID
-   gcloud services enable gmailmcp.googleapis.com --project=PROJECT_ID
-   ```
-3. *Google Auth Platform > Branding*: create the OAuth consent screen.
-   - Audience: **External**, and add the test Gmail address under *Test users*.
-   - Data Access scopes: `https://www.googleapis.com/auth/gmail.readonly` and
-     `https://www.googleapis.com/auth/gmail.compose`.
-4. *Clients > Create client*: type **Web application**, authorized redirect URI
-   `http://localhost:8976/callback`. Copy the client ID and the client secret.
-5. Register the server for the project. This writes the entry to `.mcp.json`. The client
-   ID is not secret and is stored in the file. The client secret is asked for interactively
-   and saved in Claude Code's credential store, **not** in the repo.
-   ```bash
-   claude mcp add --scope project --transport http --client-id CLIENT_ID --client-secret --callback-port 8976 gmail https://gmailmcp.googleapis.com/mcp/v1
-   ```
-6. In Claude Code, run `/mcp`, select `gmail`, choose **Authenticate**, and log in with the
-   test Gmail account.
+We tried. We created a Google Cloud project with the test account, enabled the
+*Gmail MCP API*, created an OAuth client, and logged in from Claude Code. The login
+worked and the server listed its 23 tools, but every tool call failed with:
+
+> Access to this tool requires that your Google Cloud project (...) is enrolled in the
+> Google Workspace Developer Preview Program.
+
+Enrolling in that program requires a Google Workspace account, so it is not available
+to a free `@gmail.com` test account. Claude's Gmail connector reaches the same official
+Google server: Claude's connector directory lists it as published by **Google**, its
+server URL points to `gmailmcp.googleapis.com/mcp/v1`, and it exposes the same 23 tools.
+
+### Setup (one team member)
+
+A Claude account can connect only **one** Google account to its Gmail connector, so one
+team member connects theirs to the test account:
+
+1. Click the Chrome window of the test profile so the Google login opens there.
+2. In the Claude app (or claude.ai): **Settings > Connectors > Gmail**. If it is
+   connected to a personal account, **Disconnect** it first.
+3. **Connect** and sign in with the **test** Gmail account.
+4. Make sure the Gmail connector is turned on for the session (**+** menu in the message
+   box > **Connectors**).
 
 ## Extra services (one per team member)
 

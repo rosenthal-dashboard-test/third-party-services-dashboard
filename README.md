@@ -21,7 +21,7 @@ across all services at once.
 
 | Service | Official MCP server | Local data folder |
 |---|---|---|
-| Gmail | Google Gmail MCP (`gmailmcp.googleapis.com`) | `dataExports/gmail/` |
+| Gmail | Google's Gmail MCP (`gmailmcp.googleapis.com`), via Claude's Gmail connector ([why](docs/mcp-setup.md#gmail---claudes-gmail-connector-googles-official-gmail-mcp-server)) | `dataExports/gmail/` |
 | GitHub | [github/github-mcp-server](https://github.com/github/github-mcp-server) (remote) | `dataExports/github/` |
 | Notion | [Notion MCP](https://developers.notion.com/docs/mcp) (`mcp.notion.com`) | `dataExports/notion/` |
 | _TBD_ | _TBD_ | _TBD_ |
