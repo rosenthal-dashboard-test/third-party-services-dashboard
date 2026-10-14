@@ -89,12 +89,16 @@ team member connects theirs to the test account:
 4. Make sure the Gmail connector is turned on for the session (**+** menu in the message
    box > **Connectors**).
 
+In Claude Code's **auto** permission mode, reading mail may be blocked as personal-data
+handling. Switch to a permission mode that asks before each action and approve the call
+yourself.
+
 ## Extra services (one per team member)
 
-Copy this template for each extra service:
+Each team member adds a section for their service below, using this template:
 
 ```markdown
-## <Service> - <official MCP server name>
+### <Service> - <official MCP server name>
 
 - Owner: <team member>
 - Official source: <link to the vendor's MCP documentation>
@@ -102,3 +106,21 @@ Copy this template for each extra service:
 - Steps:
   1. ...
 ```
+
+### Google Calendar - Claude's Google Calendar connector (Google's official Calendar MCP server)
+
+- Owner: Franco Busso
+- Official source: Claude's connector directory lists the Google Calendar connector as
+  published by **Google**; its server URL is `calendarmcp.googleapis.com/mcp/v1`.
+- Auth: OAuth through the Claude connector, with the **test** Google account (the same
+  one as Gmail). There is no token, and it is not in `.mcp.json`, for the same reason as
+  Gmail (see above).
+- Steps:
+  1. Click the Chrome window of the test profile so the Google login opens there.
+  2. In the Claude app: **Settings > Connectors > Google Calendar**. If it is connected
+     to a personal account, **Disconnect** it first.
+  3. **Connect** and sign in with the **test** Google account.
+  4. Turn the connector on for the session (**+** menu > **Connectors**).
+  5. Ask Claude to list your calendars. The only calendar must be the test address. If
+     you see your personal address, stop and repeat step 2.
+- Note: the test calendar's time zone is UTC. Events are created in `America/New_York`.

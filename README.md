@@ -12,7 +12,7 @@ across all services at once.
 
 | Member | Core responsibility | Extra service |
 |---|---|---|
-| _TBD_ | _TBD_ | _TBD_ |
+| Franco Busso | Test accounts, MCP setup, test data | Google Calendar |
 | Rangio Nachlieli | _TBD_ | _TBD_ |
 | Ivan Zirlinger | _TBD_ | _TBD_ |
 | Hadar Lavinsky | _TBD_ | _TBD_ |
@@ -24,7 +24,7 @@ across all services at once.
 | Gmail | Google's Gmail MCP (`gmailmcp.googleapis.com`), via Claude's Gmail connector ([why](docs/mcp-setup.md#gmail---claudes-gmail-connector-googles-official-gmail-mcp-server)) | `dataExports/gmail/` |
 | GitHub | [github/github-mcp-server](https://github.com/github/github-mcp-server) (remote) | `dataExports/github/` |
 | Notion | [Notion MCP](https://developers.notion.com/docs/mcp) (`mcp.notion.com`) | `dataExports/notion/` |
-| _TBD_ | _TBD_ | _TBD_ |
+| Google Calendar | Google's Calendar MCP (`calendarmcp.googleapis.com`), via Claude's Google Calendar connector ([setup](docs/mcp-setup.md#google-calendar---claudes-google-calendar-connector-googles-official-calendar-mcp-server)) | `dataExports/googleCalendar/` |
 | _TBD_ | _TBD_ | _TBD_ |
 | _TBD_ | _TBD_ | _TBD_ |
 | _TBD_ | _TBD_ | _TBD_ |
@@ -40,7 +40,7 @@ across all services at once.
 ├── dataExports/             # Downloaded data, one subfolder per service
 ├── localStorageFormats.md   # Documentation of the local storage format for each service
 ├── dashboard/               # Local dashboard website
-├── docs/                    # Setup guides
+├── docs/                    # Setup guides and team task lists (docs/team-tasks/)
 └── presentation/            # PowerPoint and demo video
 ```
 
