@@ -21,7 +21,8 @@ read from your personal account instead of the test account.
 Already defined in `.mcp.json`. It authenticates with a personal access token that is
 read from the `GITHUB_PAT` environment variable. Never paste the token into `.mcp.json`.
 
-1. Log in to the **test** GitHub account and create a fine-grained token:
+1. Log in to the **test** GitHub account (**Continue with Google** with the test Google
+   account) and create a fine-grained token:
    *Settings > Developer settings > Personal access tokens > Fine-grained tokens*.
    - Repository access: all repositories of the test account.
    - Permissions: Administration, Contents, Issues, and Pull requests set to

@@ -39,8 +39,9 @@ instructions, written so that **Claude Code can read it and guide you**.
 ## Rules for everyone
 
 - **The repo is public.** Never put passwords, tokens, or personal data in any file,
-  commit, or chat with Claude. Franco shares the test-account logins privately; you type
-  them yourself in the browser.
+  commit, or chat with Claude. Franco shares the test Google account password
+  privately; you type it yourself in the browser. GitHub (and the extra services) are
+  logged in with **Continue with Google** using that same test account.
 - Use only the **test accounts**, in a **separate Chrome profile** (for example
   "AI-Class-Test"), never your personal accounts. Turn off any Claude connectors linked
   to your personal accounts.

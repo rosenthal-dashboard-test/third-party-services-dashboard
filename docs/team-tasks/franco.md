@@ -17,7 +17,8 @@ service, `localStorageFormats.md`, and the download skill
 
 ## Coordination
 
-- [ ] Send each teammate their message, and send them the test-account logins privately.
+- [ ] Send each teammate their message, and send them the test Google account password
+      privately (GitHub is logged in with Continue with Google, so no other password).
 - [ ] Each time a teammate says their extra service is ready: `git pull`, open a new
       session, log in to the new server (`/mcp` > the server > **Authenticate**, in the
       test Chrome profile), and ask Claude which user is logged in to check that it is

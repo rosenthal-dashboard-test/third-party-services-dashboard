@@ -11,8 +11,9 @@
 
 ## Part 0 - One-time setup
 
-- [ ] Get the logins for the test Google account and the test GitHub account from
-      Franco. He sends them privately, never in a file or in the chat with Claude.
+- [ ] Get the test Google account password from Franco. He sends it privately, never
+      in a file or in the chat with Claude. The test GitHub account has no separate
+      password: log in at github.com with **Continue with Google** as the test account.
 - [ ] Create a Chrome profile for the test accounts (profile icon > **Add** > **Continue
       without an account**, name it "AI-Class-Test") and sign in to Gmail there with the
       test Google account.
