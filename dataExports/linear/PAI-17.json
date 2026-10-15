@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-17",
+  "title": "Campus picker for Lakeside College onboarding",
+  "date": "2026-10-15T22:21:59.402Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-17/campus-picker-for-lakeside-college-onboarding",
+  "text": "The signup flow assumes Westbrook University. For the Lakeside College launch in January we need:\n\n* A campus step in onboarding (or inferred from the student's email domain)\n* Campus-specific course catalogs (reuse the Westbrook importer)\n* Campus-scoped matching so students are only matched within their own campus\n\nCrestview State follows in March, so keep campuses data-driven rather than hard-coded. Maya will confirm the Lakeside launch date and ambassador.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "b72c50ed-e8f9-43b7-858d-3030d2513027",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Backlog",
+    "statusType": "backlog",
+    "priority": "Medium",
+    "priorityValue": 3,
+    "labels": ["Feature"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": "2027-01-08",
+    "createdAt": "2026-10-15T22:21:59.402Z",
+    "updatedAt": "2026-10-15T22:22:04.109Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

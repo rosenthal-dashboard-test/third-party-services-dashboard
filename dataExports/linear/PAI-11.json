@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-11",
+  "title": "Matching API still over 1 second with 200+ students",
+  "date": "2026-10-15T22:21:52.777Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-11/matching-api-still-over-1-second-with-200-students",
+  "text": "v0.3 takes about 4 seconds per matching request with 200+ students. The target is under 1 second.\n\nFollow-up work once the launch traffic is in:\n\n* Cache pairwise free-time overlap instead of recomputing per request\n* Add the missing database indexes on course and availability tables\n* Re-run the load test and record the numbers\n\nDaniel has a first profile showing most of the time is spent in the overlap calculation.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "e17d34bb-44d7-4eec-96a5-9c6cbe8365a5",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Backlog",
+    "statusType": "backlog",
+    "priority": "High",
+    "priorityValue": 2,
+    "labels": ["Improvement"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": null,
+    "createdAt": "2026-10-15T22:21:52.777Z",
+    "updatedAt": "2026-10-15T22:21:52.777Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

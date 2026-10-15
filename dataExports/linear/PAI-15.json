@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-15",
+  "title": "Apply the final brand colors across the whole app",
+  "date": "2026-10-15T22:21:55.937Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-15/apply-the-final-brand-colors-across-the-whole-app",
+  "text": "Priya's final palette is deep teal #0F766E and warm coral #F97362. The main flows use it, but the settings page, empty states and a few dialogs still have the old blue.\n\nSam to go through the screens with Priya and replace hard-coded colors with theme tokens so the next campus can reuse them.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "03be4136-1c7a-432f-a7fa-21102892b127",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Backlog",
+    "statusType": "backlog",
+    "priority": "Low",
+    "priorityValue": 4,
+    "labels": ["Improvement"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": null,
+    "createdAt": "2026-10-15T22:21:55.937Z",
+    "updatedAt": "2026-10-15T22:21:55.937Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

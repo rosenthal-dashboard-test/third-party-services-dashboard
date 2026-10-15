@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-13",
+  "title": "Study-style filter ignored when a group is almost full",
+  "date": "2026-10-15T22:21:54.377Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-13/study-style-filter-ignored-when-a-group-is-almost-full",
+  "text": "A few beta testers who chose \"exam cram\" ended up in \"quiet\" groups. It seems that when a group has only one seat left, the matcher fills the seat by course and time overlap and skips the study-style check.\n\nTomas collected two examples from Westbrook testers. Should be a small fix in the scoring step of the matching service, plus a regression test with a nearly full group.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "f6ca66a7-0bdc-4c7d-b464-60ee5a4b1ea7",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Backlog",
+    "statusType": "backlog",
+    "priority": "Medium",
+    "priorityValue": 3,
+    "labels": ["Bug"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": null,
+    "createdAt": "2026-10-15T22:21:54.377Z",
+    "updatedAt": "2026-10-15T22:21:54.377Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

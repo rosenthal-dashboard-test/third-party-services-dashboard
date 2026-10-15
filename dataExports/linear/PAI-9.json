@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-9",
+  "title": "Show a group's past sessions",
+  "date": "2026-10-15T22:21:50.778Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-9/show-a-groups-past-sessions",
+  "text": "Add a history tab to every group that lists past study sessions: date, place, who attended, and any notes the group left.\n\nWhy: students want to see what they covered last time, and Tomas would like it for his ambassador reports on which groups actually keep meeting (37 of 58 met at least twice).\n\nNeeds a small API endpoint on `pairly-api` and a list screen in the app. Priya to sketch the empty state for groups with no sessions yet.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "e50a367d-e813-41f8-be23-0a0998b914da",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Todo",
+    "statusType": "unstarted",
+    "priority": "Medium",
+    "priorityValue": 3,
+    "labels": ["Feature"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": null,
+    "createdAt": "2026-10-15T22:21:50.778Z",
+    "updatedAt": "2026-10-15T22:21:50.778Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

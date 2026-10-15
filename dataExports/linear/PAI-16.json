@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-16",
+  "title": "Short survey after a group's second meetup",
+  "date": "2026-10-15T22:21:57.333Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-16/short-survey-after-a-groups-second-meetup",
+  "text": "In the beta, 37 of 58 groups met at least twice. We don't really know why the other 21 stopped.\n\nAdd a 3-question in-app survey that appears after a group's second session (and one for groups that went quiet for two weeks): was the group a good fit, was the time right, what would make you come back.\n\nMaya wants this data for the investor updates to Lena at Harbor Seed Fund, and Tomas can help word the questions for students.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "a71a74e9-4fb7-4571-952a-d8fa3243c52e",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Backlog",
+    "statusType": "backlog",
+    "priority": "Low",
+    "priorityValue": 4,
+    "labels": ["Feature"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": null,
+    "createdAt": "2026-10-15T22:21:57.333Z",
+    "updatedAt": "2026-10-15T22:21:57.333Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

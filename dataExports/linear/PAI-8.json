@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-8",
+  "title": "Add a \"Leave group\" button",
+  "date": "2026-10-15T22:21:49.629Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-8/add-a-leave-group-button",
+  "text": "Beta testers had no way to leave a group that wasn't working for them, so they just stopped showing up and the rest of the group was left waiting.\n\n**Acceptance**\n\n* \"Leave group\" in the group menu with a confirmation dialog\n* The seat is freed and offered to the waiting list\n* Remaining members get a short notice that someone left\n* The student can be matched again right away\n\nTomas says this was the second most requested thing after room booking.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "ff397b8b-dd59-4d49-95f1-92102fdc3e35",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Todo",
+    "statusType": "unstarted",
+    "priority": "High",
+    "priorityValue": 2,
+    "labels": ["Feature"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": "2026-11-18",
+    "createdAt": "2026-10-15T22:21:49.629Z",
+    "updatedAt": "2026-10-15T22:21:49.629Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

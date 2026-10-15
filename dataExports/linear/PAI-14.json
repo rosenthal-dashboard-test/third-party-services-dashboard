@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-14",
+  "title": "Duplicate group invite emails around the database migration",
+  "date": "2026-10-15T22:21:55.124Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-14/duplicate-group-invite-emails-around-the-database-migration",
+  "text": "A handful of beta testers received the same \"you've been matched\" email twice around the October 17 database migration window.\n\nDaniel suspects the notification job was replayed after the migration finished. Need to:\n\n* Check the job logs from that night\n* Make sending idempotent (store a sent marker per group and student)\n\nLow frequency, but it looks sloppy right before the public launch.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "ab32f6f4-f873-48cd-bb69-d65b1eb8feb2",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Backlog",
+    "statusType": "backlog",
+    "priority": "Medium",
+    "priorityValue": 3,
+    "labels": ["Bug"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": null,
+    "createdAt": "2026-10-15T22:21:55.124Z",
+    "updatedAt": "2026-10-15T22:21:55.124Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

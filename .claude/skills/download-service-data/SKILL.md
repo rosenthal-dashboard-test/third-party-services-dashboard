@@ -1,6 +1,6 @@
 ---
 name: download-service-data
-description: Download test data from this project's third-party services (Gmail, GitHub, Notion, Google Calendar, Todoist, and new ones such as Linear or ClickUp) through their official MCP servers, and store it in dataExports/<service>/ in the format of localStorageFormats.md. Use whenever asked to download, export, refresh or add data from any service, or to add a new service to dataExports/.
+description: Download test data from this project's third-party services (Gmail, GitHub, Notion, Google Calendar, Todoist, Linear, and new ones such as ClickUp) through their official MCP servers, and store it in dataExports/<service>/ in the format of localStorageFormats.md. Use whenever asked to download, export, refresh or add data from any service, or to add a new service to dataExports/.
 ---
 
 # Download service data
@@ -16,7 +16,7 @@ disagrees with this skill, follow it.
   Never download real or personal data, and never write passwords, tokens or API keys
   into any file.
 - **Only the test accounts.** Use the project MCP servers in `.mcp.json` (`github`,
-  `notion`, `todoist`) and Claude's Gmail and Google Calendar connectors. Do **not** use
+  `notion`, `todoist`, `linear`) and Claude's Gmail and Google Calendar connectors. Do **not** use
   any other claude.ai connector, for example a claude.ai Notion connector: it may be
   linked to someone's personal account.
 - **Check the account before reading anything** (step 1). If a service is logged in
@@ -34,6 +34,7 @@ disagrees with this skill, follow it.
    | GitHub | `get_me` → login `rosenthal-dashboard-test` |
    | Notion | `notion-get-self` → email `woptestwell@gmail.com` |
    | Todoist | `user-info` → email `woptestwell@gmail.com` |
+   | Linear | `get_user` with `me` → email `woptestwell@gmail.com`, and `get_workspace` → name `Pairly` |
    | Google Calendar | `list_calendars` → a calendar with id `woptestwell@gmail.com` |
    | Gmail | `search_threads` (`pageSize` 3, `view` `THREAD_VIEW_METADATA_ONLY`) → `toRecipients` is `woptestwell@gmail.com` |
 
@@ -118,7 +119,24 @@ gap with non-test data.
 - `metadata`: `projectId`, `projectName`, `dueDate`, `recurring`, `priority`, `labels`,
   `checked`, `addedAt`.
 
-## Adding a new service (Linear, ClickUp, ...)
+### Linear → `dataExports/linear/`
+
+- `list_issues` with `team: Pairly`, `limit: 250`, `orderBy: createdAt`. Leave
+  `includeArchived` at `false`: this skips the welcome issues Linear creates in every
+  new workspace (`PAI-1` to `PAI-4`), which are archived and are not test data.
+- `list_issues` shortens long descriptions (they end with `(truncated, use get_issue
+  ...)`). Call `get_issue` for every issue whose description is cut, and use its full
+  `description`. Never store a shortened text.
+- File `<identifier>.json`, for example `PAI-5.json`. `id` = the identifier (`PAI-5`,
+  the `id` field of the result), `date` = `createdAt`, `url` = `url`,
+  `text` = `description` (`""` if none).
+- `metadata`: `uuid`, `team`, `project` (or `null`), `status`, `statusType`, `priority`
+  (= `priority.name`), `priorityValue` (= `priority.value`), `labels`, `assignee` (email,
+  `null` when the result has none), `createdBy`, `dueDate`, `createdAt`, `updatedAt`,
+  `startedAt`, `completedAt`, `canceledAt`. The `sla*` fields, `gitBranchName` and the
+  team, project and user IDs are left out.
+
+## Adding a new service (ClickUp, ...)
 
 1. Make sure its official MCP server is in `.mcp.json` and logged in to the test
    account (the user does the login), and check the account as in step 1.

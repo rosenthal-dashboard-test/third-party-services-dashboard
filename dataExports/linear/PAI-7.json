@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-7",
+  "title": "Group size picker (3-4 for problem sets)",
+  "date": "2026-10-15T22:21:47.883Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-7/group-size-picker-3-4-for-problem-sets",
+  "text": "Students told Tomas that 5 people is too many for problem sets: someone always ends up not contributing. Let students choose a preferred group size of 3-4 instead of the default 3-5.\n\n**Tasks**\n\n* Size selector in the \"find a group\" flow (Sam)\n* Matching constraint for max size 4, with fallback when not enough students want it (Daniel)\n* Copy and layout: Priya has the mockups\n\nKeep the default at 3-5 so exam-cram groups are not affected.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "3a365492-7a0b-4b71-b6a4-0ec2e9d0a79b",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "In Progress",
+    "statusType": "started",
+    "priority": "High",
+    "priorityValue": 2,
+    "labels": ["Feature"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": "2026-11-25",
+    "createdAt": "2026-10-15T22:21:47.883Z",
+    "updatedAt": "2026-10-15T22:21:47.883Z",
+    "startedAt": "2026-10-15T22:21:48.024Z",
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

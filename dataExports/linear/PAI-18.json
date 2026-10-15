@@ -1,0 +1,28 @@
+{
+  "service": "linear",
+  "type": "issue",
+  "id": "PAI-18",
+  "title": "Weekly numbers view for the investor update",
+  "date": "2026-10-15T22:22:00.803Z",
+  "url": "https://linear.app/pairly-team/issue/PAI-18/weekly-numbers-view-for-the-investor-update",
+  "text": "After launch, Maya has to send fresh numbers to Lena at Harbor Seed Fund and currently pulls them by hand from SQL.\n\nCreate a simple internal view/query with: sign-ups, weekly active students, groups formed, groups that met at least twice, and week-over-week change. Beta baseline was 214 sign-ups, 131 weekly active (61%), 58 groups.\n\nDaniel to expose the query, Wop to check the format with Maya.",
+  "downloadedAt": "2026-10-15T23:03:57Z",
+  "metadata": {
+    "uuid": "6df7e1b1-a0ec-489a-81b8-bdfe6a4e89a0",
+    "team": "Pairly",
+    "project": "Pairly v0.4",
+    "status": "Todo",
+    "statusType": "unstarted",
+    "priority": "Medium",
+    "priorityValue": 3,
+    "labels": ["Improvement"],
+    "assignee": null,
+    "createdBy": "woptestwell@gmail.com",
+    "dueDate": "2026-11-09",
+    "createdAt": "2026-10-15T22:22:00.803Z",
+    "updatedAt": "2026-10-15T22:22:00.803Z",
+    "startedAt": null,
+    "completedAt": null,
+    "canceledAt": null
+  }
+}

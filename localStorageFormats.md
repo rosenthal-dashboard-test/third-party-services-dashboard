@@ -13,11 +13,12 @@ dataExports/
 ├── github/           one file per issue
 ├── notion/           one file per page
 ├── googleCalendar/   one file per event (a recurring event is one file)
-└── todoist/          one file per task
+├── todoist/          one file per task
+└── linear/           one file per issue
 ```
 
-Each service has its own folder, named in camelCase. New services (Linear, ClickUp)
-get their own folder the same way (see [Adding a new service](#adding-a-new-service)).
+Each service has its own folder, named in camelCase. New services (ClickUp, ...) get
+their own folder the same way (see [Adding a new service](#adding-a-new-service)).
 
 ## Common format
 
@@ -26,7 +27,7 @@ order:
 
 | Key | Type | Meaning |
 |---|---|---|
-| `service` | string | Folder name of the service (`gmail`, `github`, `notion`, `googleCalendar`, `todoist`) |
+| `service` | string | Folder name of the service (`gmail`, `github`, `notion`, `googleCalendar`, `todoist`, `linear`) |
 | `type` | string | Kind of item: `email`, `issue`, `page`, `event`, `task` |
 | `id` | string | The service's own ID for the item. Unique within the service. |
 | `title` | string | Short human-readable name (subject, issue title, page title, event name, task name) |
@@ -96,6 +97,7 @@ Example (Gmail, `text` shortened):
 | Notion | When the page was last edited (the Notion MCP does not give the creation time) |
 | Google Calendar | When the event starts (first occurrence for a recurring event) |
 | Todoist | The due date |
+| Linear | When the issue was created |
 
 ## Gmail
 
@@ -215,6 +217,37 @@ Example (Gmail, `text` shortened):
 | `labels` | Label names |
 | `checked` | `true` if the task is completed |
 | `addedAt` | When the task was created, UTC |
+
+## Linear
+
+- **Source:** Linear's official MCP server (`.mcp.json`, server `linear`), tools
+  `list_issues` and `get_issue`.
+- **What is downloaded:** every issue of the team "Pairly" (key `PAI`) that is not
+  archived. Today that is the Pairly v0.4 backlog, `PAI-5` to `PAI-18`. The welcome
+  issues that Linear creates in every new workspace (`PAI-1` to `PAI-4`, "Get familiar
+  with Linear" and so on) are archived and left out on purpose.
+- **File name:** `<id>.json`, for example `PAI-5.json`.
+- `id` = the issue identifier shown in Linear (`PAI-5`). `title` = issue title.
+  `text` = issue description in Markdown (Linear uses `*` for bullets). `url` = link to
+  the issue in Linear.
+- The test issues have no assignee, comments or relations. People in the story (Daniel,
+  Sam, Priya, ...) are named in `text`. All issues are created by the test account.
+
+| `metadata` key | Meaning |
+|---|---|
+| `uuid` | Linear's internal ID for the issue |
+| `team` | Team name (`Pairly`) |
+| `project` | Project name (`Pairly v0.4`), or `null` |
+| `status` | Workflow status name (`Backlog`, `Todo`, `In Progress`, `Done`, `Canceled`) |
+| `statusType` | Linear's kind of status: `backlog`, `unstarted`, `started`, `completed`, `canceled` |
+| `priority` | `Urgent`, `High`, `Medium`, `Low` or `No priority` |
+| `priorityValue` | Same as a number: 1 = Urgent ... 4 = Low, 0 = No priority |
+| `labels` | Label names (`Feature`, `Bug`, `Improvement`) |
+| `assignee` | Email of the assigned user, or `null` |
+| `createdBy` | Email of the user who created the issue |
+| `dueDate` | `YYYY-MM-DD`, or `null` |
+| `createdAt`, `updatedAt` | UTC timestamps |
+| `startedAt`, `completedAt`, `canceledAt` | When the issue moved to started, done or canceled, UTC, or `null` |
 
 ## Adding a new service
 
