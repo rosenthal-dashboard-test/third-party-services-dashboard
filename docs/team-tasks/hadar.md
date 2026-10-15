@@ -29,23 +29,23 @@
 Start a new conversation in the repo folder and send:
 > Read docs/team-tasks/hadar.md and docs/team-tasks/test-data-story.md, and guide me through Part 1.
 
-- [ ] Confirm the service with the team. ClickUp is the suggestion. If you prefer another
+- [x] Confirm the service with the team. ClickUp is the suggestion. If you prefer another
       one, it must have an **official** MCP server made by the company itself, a free
       plan, and not be taken by someone else.
-- [ ] In the test Chrome profile, sign up at clickup.com with **Continue with Google**
+- [x] In the test Chrome profile, sign up at clickup.com with **Continue with Google**
       using the test Google account. Name the workspace "Pairly".
-- [ ] Add ClickUp's official server to `.mcp.json`:
+- [x] Add ClickUp's official server to `.mcp.json`:
       `"clickup": { "type": "http", "url": "https://mcp.clickup.com/mcp" }`
       (check ClickUp's MCP documentation first in case the address changed).
-- [ ] Open a new session so the server loads, then log in to it: send `/mcp`, choose
+- [x] Open a new session so the server loads, then log in to it: send `/mcp`, choose
       `clickup` > **Authenticate**, and finish the login in the test Chrome profile.
-- [ ] Ask Claude to check, through the ClickUp server, which user is logged in. It must
+- [x] Ask Claude to check, through the ClickUp server, which user is logged in. It must
       be the test account.
-- [ ] Document it: add a "ClickUp" section to [docs/mcp-setup.md](../mcp-setup.md) using
+- [x] Document it: add a "ClickUp" section to [docs/mcp-setup.md](../mcp-setup.md) using
       the template there, and fill in the ClickUp row and your row in the root `README.md`.
-- [ ] Fill ClickUp with **at least 10 natural items** that fit the story (see "Ideas for
+- [x] Fill ClickUp with **at least 10 natural items** that fit the story (see "Ideas for
       the extra services" in [test-data-story.md](test-data-story.md)).
-- [ ] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
+- [x] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
 - [ ] Tell Franco that ClickUp is ready.
 - [ ] End this conversation with `/clear`. The assignment requires filling the test data
       in a different conversation from the rest of the work.

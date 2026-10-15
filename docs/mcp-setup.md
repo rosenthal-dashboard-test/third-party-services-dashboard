@@ -172,3 +172,27 @@ Each team member adds a section for their service below, using this template:
   - The login page asks you to **Create a workspace**: you are logged in to Linear with
     an account that has no workspace (often the wrong browser profile). Check the account
     before creating anything.
+
+### ClickUp - ClickUp's official MCP server (`mcp.clickup.com`)
+
+- Owner: Hadar Lavinsky
+- Official source: [ClickUp's MCP Server docs](https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server),
+  ClickUp's own hosted server at `https://mcp.clickup.com/mcp`.
+- Auth: OAuth only (personal API tokens are not accepted), already defined in
+  `.mcp.json`. There is no token to manage.
+- Steps:
+  1. In the test Chrome profile, sign up at clickup.com with **Continue with Google**
+     using the test Google account.
+  2. Add the server to `.mcp.json`:
+     ```json
+     "clickup": { "type": "http", "url": "https://mcp.clickup.com/mcp" }
+     ```
+  3. Start a new Claude Code session so the server loads, then run `/mcp`, choose
+     `clickup` > **Authenticate**, and finish the login in the test Chrome profile.
+  4. Ask Claude, through the server, which ClickUp user is logged in (its
+     `clickup_get_workspace_members` tool). The only member must be the test account.
+- Notes:
+  - The free plan allows only **100 MCP calls per 24 hours** per workspace. Prefer the
+    bulk operations (`clickup_get_operators` / `clickup_execute_operator`) over one call
+    per task when filling or downloading data.
+  - The test workspace is still named "Workspace" (ClickUp's default), not "Pairly".
