@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a138462cf419613",
+  "title": "Final app icon and brand colors",
+  "date": "2026-10-14T02:38:05Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878991029462472211|msg-f:1878991029462472211",
+  "text": "Hi Wop,\n\nWe have a winner! After the team vote, the final Pairly app icon is the two overlapping speech bubbles forming a \"P\". Maya and Sam voted for it, and it also tested best with the Westbrook students.\n\nThe brand colors are now final too:\n- Primary: deep teal (#0F766E)\n- Accent: warm coral (#F97362)\n- Background: off-white (#FAF7F2)\n- Text: charcoal (#1F2937)\n\nSam already has the icon files for both Android and iOS, so they'll be in the builds that go to the app stores on Oct 25. I'm updating the colors in the onboarding screens this week.\n\nI put everything (icon versions, colors, and fonts) on the \"Brand guidelines\" page in Notion so the whole team has one place to look.\n\nPriya Raman\nProduct Designer, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a138462cf419613",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Final app icon and brand colors",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3700",
+    "internalDate": "1791945485000",
+    "sizeEstimate": 2522,
+    "attachments": []
+  }
+}

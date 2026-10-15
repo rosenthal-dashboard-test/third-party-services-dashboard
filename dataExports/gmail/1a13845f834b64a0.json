@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a13845f834b64a0",
+  "title": "Database migration this Saturday night",
+  "date": "2026-10-14T02:37:52Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878991015303144608|msg-f:1878991015303144608",
+  "text": "Hi Wop,\n\nHeads up: I'm planning a database migration this Saturday, October 17, from 11 PM to 1 AM Eastern.\n\nWhy: the matching service v0.3 stores each student's free time in a new format, and the old tables can't handle it. Moving now means we don't have to do it after the Nov 2 launch, when far more students will be using the app.\n\nWhat to expect:\n- The Pairly app will show a \"We'll be right back\" screen for up to 2 hours\n- No data should be lost. I'm taking a full backup before I start.\n- If anything goes wrong, I can roll back to the backup in about 15 minutes\n\nCould you send a short notice to the Westbrook beta testers on Friday? Tomás can share it in the campus group chat too.\n\nThanks,\nDaniel Ortiz\nCTO, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a13845f834b64a0",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Database migration this Saturday night",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3699",
+    "internalDate": "1791945472000",
+    "sizeEstimate": 2593,
+    "attachments": []
+  }
+}

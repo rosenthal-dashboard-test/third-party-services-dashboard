@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-mobile#4",
+  "title": "Matching screen loads slowly on older Android phones",
+  "date": "2026-10-14T02:45:10Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-mobile/issues/4",
+  "text": "## Problem\n\nOn older Android phones (for example, devices from 2021), the **Matching** screen takes 3 to 5 seconds to show suggested groups. On iOS it loads almost instantly.\n\n## Notes\n\n- Part of the delay comes from the API (see the 4-second response time issue in pairly-api)\n- The app also draws every group card at once. We should load the first 5 cards and the rest while scrolling.\n\nReported by the Westbrook engineering study groups, via Tomas Rivera.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-mobile",
+    "number": 4,
+    "state": "OPEN",
+    "labels": ["bug"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:45:10Z",
+    "updatedAt": "2026-10-14T02:45:10Z"
+  }
+}

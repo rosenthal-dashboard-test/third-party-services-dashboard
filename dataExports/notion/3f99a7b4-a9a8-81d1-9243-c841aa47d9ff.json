@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-81d1-9243-c841aa47d9ff",
+  "title": "Weekly sync - Oct 8",
+  "date": "2026-10-14T02:49:56.333Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a881d19243c841aa47d9ff",
+  "text": "Date: <mention-date start=\"2026-10-08\"/> · Notes: **Wop testwell**\nAttendees: Maya Chen, Daniel Ortiz, Priya Raman, Sam Okafor, Wop testwell, Tomas Rivera (video)\n## Updates\n- **Daniel:** Matching v0.3 is on staging. 87% of students matched within a minute, but the API is slow with 200+ students.\n- **Sam:** Push notifications don't arrive on Android 15. Looks like a missing permission request.\n- **Priya:** Icon vote done - the overlapping speech bubbles won. Onboarding redesign (7 screens down to 4) is ready for review.\n- **Tomas:** 12 beta testers interviewed. Top request: book a library study room from the app.\n- **Maya:** Pitch to Harbor Seed Fund partners done. Lena asked for user numbers.\n## Decisions\n- Remove the \"about you\" screen from onboarding\n- Database migration on Saturday, October 17, 11 PM - 1 AM ET\n- Library room booking is **not** in scope for the Nov 2 launch\n## Action items\n- [ ] Sam: fix the Android 15 notification bug (2-3 days)\n- [ ] Daniel: get API response time under 1 second\n- [ ] Wop: send the migration notice to beta testers on Friday\n- [ ] Maya: send beta numbers to Lena\n- [ ] Tomas: ask Westbrook library staff about their booking system",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "🗓️",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:49:56.333Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

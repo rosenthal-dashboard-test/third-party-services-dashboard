@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-8158-b984-e2d1c9aa1367",
+  "title": "Matching service v0.3 - spec",
+  "date": "2026-10-14T02:49:37.602Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a88158b984e2d1c9aa1367",
+  "text": "Author: **Daniel Ortiz** · Repo: pairly-api · Status: On staging\n## Goal\nPlace every student in a study group of **3 to 5 people** within one minute of finishing onboarding.\n## Signals\n1. **Shared courses** - same course section scores higher than same course\n2. **Overlapping free time** - at least two 1-hour slots in common each week\n3. **Study style** - quiet, discussion, or exam cram\n## Results on the Westbrook sample data\n- 87% of students matched within one minute\n- Average group size: 4.1\n- Students with only one course: groups get too big (up to 8). Fix in progress.\n## Performance\n- Today: around 4 seconds per request when 200+ students match at the same time\n- Target for launch: under 1 second\n- Plan: group students by course first, then compare free time only inside each course\n## Next version (v0.4, after launch)\n- Smaller groups (3-4) for problem-set study\n- Waiting list that retries matching every 6 hours\n- Use library room availability if Westbrook gives us access",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "⚙️",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:49:37.602Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

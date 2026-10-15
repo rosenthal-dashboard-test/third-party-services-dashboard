@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-api#1",
+  "title": "API takes 4s to respond with 200+ students matching",
+  "date": "2026-10-14T02:44:53Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-api/issues/1",
+  "text": "## Problem\n\nWhen more than 200 students run matching at the same time, `POST /match` sometimes takes around **4 seconds** to respond. For the Nov 2 beta launch it needs to be **under 1 second**.\n\n## Steps to reproduce\n\n1. Load the Westbrook University sample data on staging\n2. Run the load test: `npm run loadtest -- --students 250`\n3. Check the p95 response time in the report\n\n## Notes\n\n- Most of the time is spent comparing every student's free-time grid with every other student's.\n- Idea: group students by course first, then only compare free time inside each course.\n\nReported by Daniel Ortiz. Blocking the beta launch.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-api",
+    "number": 1,
+    "state": "OPEN",
+    "labels": ["bug"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:44:53Z",
+    "updatedAt": "2026-10-14T02:44:53Z"
+  }
+}

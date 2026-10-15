@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-8130-839a-cb9a53f63f47",
+  "title": "Weekly sync - Oct 1",
+  "date": "2026-10-14T02:49:56.333Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a88130839acb9a53f63f47",
+  "text": "Date: <mention-date start=\"2026-10-01\"/> · Notes: **Wop testwell**\nAttendees: Maya Chen, Daniel Ortiz, Priya Raman, Sam Okafor, Wop testwell\n## Updates\n- **Maya:** First meeting with Lena Fischer from Harbor Seed Fund went well. She wants to see beta numbers before the partner meeting.\n- **Daniel:** Matching service v0.2 works but only uses shared courses. v0.3 will add free time and study style.\n- **Priya:** Three app icon options ready. Team vote next week.\n- **Sam:** Android and iOS beta builds are out to 40 Westbrook students through Tomas.\n## Decisions\n- Beta launch target: **November 2**, Westbrook University only\n- Store submission deadline: October 25\n## Action items\n- [x] Daniel: ship matching v0.3 to staging\n- [x] Priya: share icon options in the team chat\n- [ ] Wop: create the beta launch checklist page\n- [ ] Maya: schedule the pitch meeting with Harbor Seed Fund",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "🗓️",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:49:56.333Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "service": "todoist",
+  "type": "task",
+  "id": "6hmQV5VwxvVg8Qcg",
+  "title": "Order stickers for the launch booth",
+  "date": "2026-10-24",
+  "url": "https://app.todoist.com/app/task/6hmQV5VwxvVg8Qcg",
+  "text": "",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "projectId": "6hmQP32HjWcpvqjg",
+    "projectName": "Inbox",
+    "dueDate": "2026-10-24",
+    "recurring": false,
+    "priority": "p4",
+    "labels": [],
+    "checked": false,
+    "addedAt": "2026-10-15T20:23:42.060Z"
+  }
+}

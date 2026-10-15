@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a13844d68ae6322",
+  "title": "New onboarding screens ready for review",
+  "date": "2026-10-14T02:36:38Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878990937547236130|msg-f:1878990937547236130",
+  "text": "Hi Wop,\n\nThe redesigned onboarding flow is ready for review. It's down from 7 screens to 4:\n\n1. Welcome screen with a short video of a study group in action\n2. Pick your university and courses\n3. Set your free time with a simple weekly grid\n4. Choose a study style (quiet, discussion, or exam cram)\n\nIn the beta feedback, Tomás said students were giving up on the old \"about you\" screen, so I removed it completely. We can ask for a profile photo later, after the student's first group session.\n\nI wrote up the reasons for each change in the \"Onboarding redesign\" page in Notion. Could you add your comments there by Friday? Maya and Sam have already looked at it.\n\nThanks!\nPriya Raman\nProduct Designer, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a13844d68ae6322",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "New onboarding screens ready for review",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3695",
+    "internalDate": "1791945398000",
+    "sizeEstimate": 2557,
+    "attachments": []
+  }
+}

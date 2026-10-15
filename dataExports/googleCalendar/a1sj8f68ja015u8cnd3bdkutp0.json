@@ -1,0 +1,28 @@
+{
+  "service": "googleCalendar",
+  "type": "event",
+  "id": "a1sj8f68ja015u8cnd3bdkutp0",
+  "title": "Onboarding redesign review",
+  "date": "2026-10-16T13:00:00-04:00",
+  "url": "https://www.google.com/calendar/event?eid=YTFzajhmNjhqYTAxNXU4Y25kM2Jka3V0cDAgd29wdGVzdHdlbGxAbQ",
+  "text": "Final review of Priya Raman's onboarding redesign (7 screens down to 4).\n\nAttendees: Priya Raman, Sam Okafor, Maya Chen, Wop testwell.\n\nTo decide:\n- Progress bar (1 of 4, 2 of 4...)\n- Can students skip the free-time grid and fill it in later?\n- Notification permission request on screen 4 (fixes the Android 15 bug)\n\nBefore the meeting: add comments on the \"Onboarding redesign\" page in Notion.",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "calendarId": "woptestwell@gmail.com",
+    "start": "2026-10-16T13:00:00-04:00",
+    "end": "2026-10-16T14:00:00-04:00",
+    "allDay": false,
+    "timeZone": "America/New_York",
+    "location": "Pairly team video call",
+    "status": "confirmed",
+    "eventType": "DEFAULT",
+    "transparency": "opaque",
+    "organizer": "woptestwell@gmail.com",
+    "creator": "woptestwell@gmail.com",
+    "created": "2026-10-14T03:00:00Z",
+    "updated": "2026-10-15T20:51:26Z",
+    "recurrence": null,
+    "occurrences": ["2026-10-16T13:00:00-04:00"],
+    "reminders": "calendar default (popup, 30 minutes before)"
+  }
+}

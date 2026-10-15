@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-mobile#1",
+  "title": "Push notifications not delivered on Android 15",
+  "date": "2026-10-14T02:45:02Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-mobile/issues/1",
+  "text": "## Problem\n\nPush notifications never arrive on phones running **Android 15**. iOS and Android 14 and older work correctly.\n\nThis affects 5 of the 12 Westbrook beta testers Tomas Rivera interviewed. They miss the \"Your study group meets in 30 minutes\" reminder, which is our most important notification.\n\n## Steps to reproduce\n\n1. Install the beta build on a phone with Android 15\n2. Join a study group with a session in the next hour\n3. Wait for the 30-minute reminder - it never shows up\n\n## Likely cause\n\nAndroid 15 requires the app to ask for the notification permission at runtime. Our onboarding never asks for it, so the system blocks all notifications.\n\n## Fix\n\nAsk for the notification permission on the last onboarding screen. Estimated 2 to 3 days.\n\nReported by Sam Okafor. On the risk list for the Nov 2 launch.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-mobile",
+    "number": 1,
+    "state": "OPEN",
+    "labels": ["bug"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:45:02Z",
+    "updatedAt": "2026-10-14T02:45:02Z"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service": "googleCalendar",
+  "type": "event",
+  "id": "jd9m7e0sb5i6cim5j9114nj3vg",
+  "title": "Feedback session with Westbrook engineering study groups",
+  "date": "2026-10-19T16:00:00-04:00",
+  "url": "https://www.google.com/calendar/event?eid=amQ5bTdlMHNiNWk2Y2ltNWo5MTE0bmozdmcgd29wdGVzdHdlbGxAbQ",
+  "text": "Tomas Rivera (campus ambassador) runs a feedback session with 8 students from the engineering study groups. Wop joins by video.\n\nQuestions to ask:\n- How did the \"exam cram\" study style work before midterms?\n- Is a group of 5 too big for problem sets?\n- Would you book a library study room from the app?\n- Any problems with notifications or slow screens on Android?\n\nTomas will send a summary by email afterwards.",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "calendarId": "woptestwell@gmail.com",
+    "start": "2026-10-19T16:00:00-04:00",
+    "end": "2026-10-19T17:30:00-04:00",
+    "allDay": false,
+    "timeZone": "America/New_York",
+    "location": "Westbrook University library, group study room 3",
+    "status": "confirmed",
+    "eventType": "DEFAULT",
+    "transparency": "opaque",
+    "organizer": "woptestwell@gmail.com",
+    "creator": "woptestwell@gmail.com",
+    "created": "2026-10-14T03:00:13Z",
+    "updated": "2026-10-15T20:51:26Z",
+    "recurrence": null,
+    "occurrences": ["2026-10-19T16:00:00-04:00"],
+    "reminders": "calendar default (popup, 30 minutes before)"
+  }
+}

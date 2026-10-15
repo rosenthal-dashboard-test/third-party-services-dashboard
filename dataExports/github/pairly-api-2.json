@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-api#2",
+  "title": "Students with only one course get groups that are too big",
+  "date": "2026-10-14T02:44:55Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-api/issues/2",
+  "text": "## Problem\n\nStudents who are enrolled in only one course often end up in groups of 7 or 8 people, even though the maximum group size is 5.\n\n## Cause\n\nThe matching service v0.3 relaxes the size limit when it can't find enough overlapping free time for a student. Students with a single course have fewer possible matches, so they hit this fallback much more often.\n\n## Proposed fix\n\n- Never go above 5 members\n- If no group fits, put the student on a short waiting list and retry matching every 6 hours\n\nFound by Daniel Ortiz while testing with the Westbrook sample data. Fix in progress.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-api",
+    "number": 2,
+    "state": "OPEN",
+    "labels": ["bug"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:44:55Z",
+    "updatedAt": "2026-10-14T02:44:55Z"
+  }
+}

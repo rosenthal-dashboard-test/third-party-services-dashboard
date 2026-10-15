@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a13845cd4ace955",
+  "title": "Re: Beta feedback from 12 Westbrook students",
+  "date": "2026-10-14T02:37:41Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878990990354567134|msg-f:1878991003783588181",
+  "text": "Hi again Wop,\n\nAs promised, here are the notes from the engineering study groups (8 more students):\n\n- They loved the \"exam cram\" study style. One group used it every night before their calculus midterm.\n- Groups of 5 felt too big for problem sets. Most said 3 or 4 is ideal.\n- Two students asked if they could see a group's past session times before joining.\n- Everyone on iOS said the app felt fast. On older Android phones, the matching screen took a few seconds to load.\n\nSo far the library room booking idea is still the number one request across both rounds. I can ask the Westbrook library staff if they have a booking system Pairly could connect to.\n\nTalk soon,\nTomás Rivera\nCampus Ambassador, Westbrook University\n\nOn Tue, Oct 13, 2026 10:37 PM, Wop testwell <woptestwell@gmail.com> wrote:\n\n> Hi Wop,\n>\n> I sat down with 12 of our Westbrook beta testers this week. Here's a summary of what they said.\n>\n> What they liked:\n> - Getting matched with people from the same course section, not just the same course\n> - The weekly free-time grid. Several people said it was faster than texting a group chat.\n> - The reminder 30 minutes before a session (when it works, see below)\n>\n> What they didn't like:\n> - The \"about you\" screen in onboarding felt too long, and 4 people almost quit there\n> - 5 testers on Android 15 never got any notifications\n> - There's no way to leave a group without messaging everyone\n>\n> Biggest request: a way to book a library study room right from the app.\n>\n> I'll send more notes after I talk to the engineering study groups on Monday.\n>\n> Tomás Rivera\n> Campus Ambassador, Westbrook University\n>",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a138459b43e4fde",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Re: Beta feedback from 12 Westbrook students",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 2,
+    "positionInThread": 2,
+    "historyId": "3698",
+    "internalDate": "1791945461000",
+    "sizeEstimate": 3030,
+    "attachments": []
+  }
+}

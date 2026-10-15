@@ -1,0 +1,20 @@
+{
+  "service": "todoist",
+  "type": "task",
+  "id": "6hmQV5XhRcJwrphg",
+  "title": "Draft launch day email to beta testers and press",
+  "date": "2026-10-31",
+  "url": "https://app.todoist.com/app/task/6hmQV5XhRcJwrphg",
+  "text": "",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "projectId": "6hmQP32HjWcpvqjg",
+    "projectName": "Inbox",
+    "dueDate": "2026-10-31",
+    "recurring": false,
+    "priority": "p2",
+    "labels": [],
+    "checked": false,
+    "addedAt": "2026-10-15T20:23:43.374Z"
+  }
+}

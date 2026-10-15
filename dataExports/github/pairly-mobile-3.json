@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-mobile#3",
+  "title": "Update onboarding to the new 4-screen flow",
+  "date": "2026-10-14T02:45:08Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-mobile/issues/3",
+  "text": "## Summary\n\nPriya Raman's onboarding redesign is approved. The flow goes from 7 screens down to 4:\n\n1. Welcome screen with a short video of a study group in action\n2. Pick your university and courses\n3. Set your free time with the weekly grid\n4. Choose a study style (quiet, discussion, or exam cram)\n\nThe old \"about you\" screen is removed, because 4 of the 12 beta testers almost quit there. The profile photo is now requested after the first group session.\n\n## Tasks\n\n- [ ] Build the 4 new screens\n- [ ] Apply the final brand colors (teal `#0F766E`, coral `#F97362`)\n- [ ] Ask for the notification permission on screen 4 (see the Android 15 bug)\n- [ ] Remove the old \"about you\" screen\n\nDesign details: \"Onboarding redesign\" page in Notion. Due before the Oct 25 store submission.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-mobile",
+    "number": 3,
+    "state": "OPEN",
+    "labels": ["design"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:45:08Z",
+    "updatedAt": "2026-10-14T02:45:08Z"
+  }
+}

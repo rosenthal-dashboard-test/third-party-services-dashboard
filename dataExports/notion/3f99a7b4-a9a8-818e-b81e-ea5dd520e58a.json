@@ -1,0 +1,31 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+  "title": "Pairly HQ",
+  "date": "2026-10-14T02:47:37.448Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a8818eb81eea5dd520e58a",
+  "text": "<callout icon=\"👋\" color=\"blue_bg\">\n\tWelcome to the Pairly team wiki. **Pairly** matches university students into small study groups based on shared courses, free time, and study style.\n</callout>\n## Where we are\n- Public beta launches at **Westbrook University** on <mention-date start=\"2026-11-02\"/>\n- App store submission (Android and iOS): <mention-date start=\"2026-10-25\"/>\n- Next campuses: Lakeside College (January) and Crestview State (March)\n## Team\n- **Maya Chen** - Co-founder & CEO\n- **Daniel Ortiz** - CTO (pairly-api)\n- **Priya Raman** - Product Designer\n- **Sam Okafor** - Mobile Developer (pairly-mobile)\n- **Wop testwell** - Project Manager (pairly-website, launch checklist, weekly sync notes)\n- **Tomas Rivera** - Campus Ambassador, Westbrook University\n## Code\nAll code lives on GitHub under rosenthal-dashboard-test: pairly-api, pairly-mobile, and pairly-website.\n## Pages\nEverything for the launch is in the pages below.\n<page url=\"https://app.notion.com/p/3f99a7b4a9a8818ca11dc6ce17d6da5c\">Beta launch checklist - Nov 2</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a88115886dc87cf283ddf2\">Onboarding redesign</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a881888f7dfdf5a4d99074\">Brand guidelines</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a88158b984e2d1c9aa1367\">Matching service v0.3 - spec</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a88130839acb9a53f63f47\">Weekly sync - Oct 1</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a881d19243c841aa47d9ff\">Weekly sync - Oct 8</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a881c0930dfd2848a57406\">Westbrook beta feedback summary</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a881b9824ec9f38da93820\">Harbor Seed Fund - investor notes</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a8814b95bcf3e0537159d9\">Campus expansion: Lakeside College & Crestview State</page>\n<page url=\"https://app.notion.com/p/3f99a7b4a9a881d38a42c318413fa6cd\">Team directory</page>",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "🎓",
+    "workspace": "Wop testwell’s Space",
+    "parentId": null,
+    "parentTitle": null,
+    "path": "",
+    "lastEditedTime": "2026-10-14T02:47:37.448Z",
+    "childPageIds": [
+      "3f99a7b4-a9a8-818c-a11d-c6ce17d6da5c",
+      "3f99a7b4-a9a8-8115-886d-c87cf283ddf2",
+      "3f99a7b4-a9a8-8188-8f7d-fdf5a4d99074",
+      "3f99a7b4-a9a8-8158-b984-e2d1c9aa1367",
+      "3f99a7b4-a9a8-8130-839a-cb9a53f63f47",
+      "3f99a7b4-a9a8-81d1-9243-c841aa47d9ff",
+      "3f99a7b4-a9a8-81c0-930d-fd2848a57406",
+      "3f99a7b4-a9a8-81b9-824e-c9f38da93820",
+      "3f99a7b4-a9a8-814b-95bc-f3e0537159d9",
+      "3f99a7b4-a9a8-81d3-8a42-c318413fa6cd"
+    ],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

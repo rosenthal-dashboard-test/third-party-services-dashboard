@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-api#3",
+  "title": "Migrate free-time data to new format (Oct 17)",
+  "date": "2026-10-14T02:44:58Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-api/issues/3",
+  "text": "## Summary\n\nThe matching service v0.3 stores each student's weekly free time as 30-minute slots instead of free-text ranges. The old `availability` table can't hold the new format.\n\n## Plan\n\n- **When:** Saturday, October 17, 11 PM - 1 AM Eastern\n- Take a full database backup first\n- Run the migration script and check the row counts\n- Show the \"We'll be right back\" screen in the app during the migration\n- Rollback plan: restore the backup (about 15 minutes)\n\n## Checklist\n\n- [ ] Backup tested on staging\n- [ ] Wop sends a notice to the Westbrook beta testers on Friday\n- [ ] Tomas Rivera shares the notice in the campus group chat\n- [ ] Migration done and verified\n\nOwner: Daniel Ortiz\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-api",
+    "number": 3,
+    "state": "OPEN",
+    "labels": ["enhancement"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:44:58Z",
+    "updatedAt": "2026-10-14T02:44:58Z"
+  }
+}

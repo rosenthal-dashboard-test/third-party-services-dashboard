@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a1384518f00284e",
+  "title": "Push notifications broken on Android 15",
+  "date": "2026-10-14T02:36:55Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878990955369998414|msg-f:1878990955369998414",
+  "text": "Hi Wop,\n\nHeads up: push notifications aren't arriving on phones with Android 15. iOS and older Android versions work fine.\n\nWhat I know so far:\n- It affects about a third of our Westbrook beta testers (Tomás confirmed 5 of his 12 testers are on Android 15).\n- Students don't get the \"Your study group meets in 30 minutes\" reminder, which is our most important notification.\n- It looks like Android 15 needs a new permission request that our app never asks for.\n\nI opened an issue in the pairly-mobile repo on GitHub with the details and steps to reproduce. I think I can have a fix in 2 to 3 days, so it shouldn't affect the Nov 2 launch, but let's keep it on the risk list for Thursday's sync.\n\nSam Okafor\nMobile Developer, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a1384518f00284e",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Push notifications broken on Android 15",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3696",
+    "internalDate": "1791945415000",
+    "sizeEstimate": 2596,
+    "attachments": []
+  }
+}

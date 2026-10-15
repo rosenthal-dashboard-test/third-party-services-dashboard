@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-website#2",
+  "title": "Feature request: book a library study room from the app",
+  "date": "2026-10-14T02:45:15Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-website/issues/2",
+  "text": "## Background\n\nIn both rounds of Westbrook beta feedback, the number one request was a way to **book a library study room** right from Pairly once a group is formed.\n\n## Ideas\n\n- Ask the Westbrook library staff if their room booking system has an API (Tomas Rivera will ask)\n- For the website: add a \"Coming soon: book a study room\" section to show students we heard them\n- For the app (after launch): show free rooms that match the group's session time\n\nNot planned for the Nov 2 launch. To discuss at the weekly sync with Maya Chen.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-website",
+    "number": 2,
+    "state": "OPEN",
+    "labels": ["enhancement"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:45:15Z",
+    "updatedAt": "2026-10-14T02:45:15Z"
+  }
+}

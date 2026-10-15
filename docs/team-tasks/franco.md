@@ -38,16 +38,19 @@ Start a new conversation with `/clear`. Do **not** read `test-data-story.md` in 
 part. Then send:
 > Read docs/team-tasks/franco.md and guide me through the download step.
 
-- [ ] Check that every service is connected to its test account. For Gmail and Google
+- [x] Check that every service is connected to its test account. For Gmail and Google
       Calendar, list recent emails or calendars and confirm the test address.
-- [ ] Download at least 5 items from every **connected** service into `dataExports/<service>/`,
+      (All 5 checked, 2026-10-15)
+- [x] Download at least 5 items from every **connected** service into `dataExports/<service>/`,
       with all their metadata (for example, for emails: from, to, subject, date). Each
       item must be distinguishable from the others.
-- [ ] Have Claude write `localStorageFormats.md`, explaining the format of every service.
+      (2026-10-15: Gmail 11, GitHub 10, Notion 11, Google Calendar 12, Todoist 12)
+- [x] Have Claude write `localStorageFormats.md`, explaining the format of every service.
       **Review it yourself.** The assignment says the format is your responsibility.
-- [ ] Have Claude create the project skill for downloading and storing data, in
-      `.claude/skills/`.
-- [ ] Commit and push.
+      (Reviewed by Franco, 2026-10-15)
+- [x] Have Claude create the project skill for downloading and storing data, in
+      `.claude/skills/`. (`download-service-data`, with a checker script, 2026-10-15)
+- [x] Commit and push.
 
 ## Check the skill (new conversation)
 

@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a138448f9586abc",
+  "title": "Matching service v0.3 status",
+  "date": "2026-10-14T02:36:19Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878990918499461820|msg-f:1878990918499461820",
+  "text": "Hey Wop,\n\nQuick update on the matching service before Thursday.\n\nv0.3 is on the staging server. The big change is that groups are now built from three signals instead of one: shared courses, overlapping free time, and preferred study style (quiet, discussion, or exam cram). In tests with the fake Westbrook dataset, 87% of students got a group of 3 to 5 people within a minute.\n\nStill open:\n- Students with only one course end up in groups that are too big. I have a fix in progress.\n- The API sometimes takes 4 seconds to respond when more than 200 students are matching at once. It needs to be under 1 second for launch.\n\nAll of this is tracked as issues in the pairly-api repo on GitHub. I'll link the important ones in the weekly sync notes.\n\nDaniel Ortiz\nCTO, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a138448f9586abc",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Matching service v0.3 status",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3694",
+    "internalDate": "1791945379000",
+    "sizeEstimate": 2585,
+    "attachments": []
+  }
+}

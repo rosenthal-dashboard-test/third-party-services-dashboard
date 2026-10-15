@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-api#4",
+  "title": "Limit group size to 3-4 for problem-set groups",
+  "date": "2026-10-14T02:45:00Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-api/issues/4",
+  "text": "## Background\n\nIn the Westbrook beta feedback collected by Tomas Rivera, the engineering study groups said groups of 5 feel too big for problem sets. Most students said **3 or 4 people** is ideal.\n\n## Proposal\n\n- Add a `max_group_size` setting per study style\n- Default for \"exam cram\" and \"discussion\": 5\n- Default for a new \"problem sets\" option: 4\n- Let students choose their preferred size during onboarding later (not for the Nov 2 launch)\n\nRequested by Maya Chen after the weekly sync.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-api",
+    "number": 4,
+    "state": "OPEN",
+    "labels": ["enhancement"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:45:00Z",
+    "updatedAt": "2026-10-14T02:45:00Z"
+  }
+}

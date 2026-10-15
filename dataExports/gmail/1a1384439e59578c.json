@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a1384439e59578c",
+  "title": "Pairly beta launch plan - Nov 2",
+  "date": "2026-10-14T02:35:57Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878990895497959308|msg-f:1878990895497959308",
+  "text": "Hi Wop,\n\nWe're officially locking Sunday, November 2 as the Pairly beta launch date. Westbrook University is our first campus, and Tomás Rivera has already lined up about 40 students who want in on day one.\n\nHere's who owns what:\n- Daniel Ortiz: matching service v0.3 live and stable by Oct 28\n- Sam Okafor: Android and iOS builds submitted to the stores by Oct 25\n- Priya Raman: final onboarding screens and app icon by Oct 20\n- You: launch checklist, beta tester emails, and the weekly sync notes in Notion\n\nThe one thing that could push the date is the push notification bug on Android. Sam is looking into it this week.\n\nLet's go through the full checklist on Thursday.\n\nThanks,\nMaya Chen\nCo-founder & CEO, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a1384439e59578c",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Pairly beta launch plan - Nov 2",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3693",
+    "internalDate": "1791945357000",
+    "sizeEstimate": 2557,
+    "attachments": []
+  }
+}

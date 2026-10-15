@@ -1,0 +1,20 @@
+{
+  "service": "todoist",
+  "type": "task",
+  "id": "6hmQV5hQrRxrh9hg",
+  "title": "Follow up with Lakeside College contact for the January launch",
+  "date": "2026-11-10",
+  "url": "https://app.todoist.com/app/task/6hmQV5hQrRxrh9hg",
+  "text": "",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "projectId": "6hmQP32HjWcpvqjg",
+    "projectName": "Inbox",
+    "dueDate": "2026-11-10",
+    "recurring": false,
+    "priority": "p4",
+    "labels": [],
+    "checked": false,
+    "addedAt": "2026-10-15T20:23:44.636Z"
+  }
+}

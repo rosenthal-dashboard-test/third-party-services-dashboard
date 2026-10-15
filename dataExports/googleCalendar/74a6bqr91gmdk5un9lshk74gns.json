@@ -1,0 +1,28 @@
+{
+  "service": "googleCalendar",
+  "type": "event",
+  "id": "74a6bqr91gmdk5un9lshk74gns",
+  "title": "App store submission deadline (Android + iOS)",
+  "date": "2026-10-25",
+  "url": "https://www.google.com/calendar/event?eid=NzRhNmJxcjkxZ21kazV1bjlsc2hrNzRnbnMgd29wdGVzdHdlbGxAbQ",
+  "text": "Sam Okafor submits the Pairly beta builds to Google Play and the App Store.\n\nMust be in the builds:\n- New 4-screen onboarding\n- Final app icon (overlapping speech bubbles) and brand colors\n- Fix for push notifications on Android 15\n\nStore screenshots and description: Priya Raman and Wop testwell.\nApp review can take up to 5 days, so this date protects the Nov 2 launch.",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "calendarId": "woptestwell@gmail.com",
+    "start": "2026-10-25",
+    "end": "2026-10-26",
+    "allDay": true,
+    "timeZone": "America/New_York",
+    "location": null,
+    "status": "confirmed",
+    "eventType": "DEFAULT",
+    "transparency": "transparent",
+    "organizer": "woptestwell@gmail.com",
+    "creator": "woptestwell@gmail.com",
+    "created": "2026-10-14T03:00:18Z",
+    "updated": "2026-10-15T20:51:26Z",
+    "recurrence": null,
+    "occurrences": ["2026-10-25"],
+    "reminders": "calendar default (popup, 30 minutes before)"
+  }
+}

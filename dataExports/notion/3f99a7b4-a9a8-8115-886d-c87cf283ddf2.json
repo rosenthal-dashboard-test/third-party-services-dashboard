@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-8115-886d-c87cf283ddf2",
+  "title": "Onboarding redesign",
+  "date": "2026-10-14T02:49:07.700Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a88115886dc87cf283ddf2",
+  "text": "Author: **Priya Raman** · Status: Approved · Reviewers: Maya, Sam, Wop\n## Why we changed it\nThe old onboarding had 7 screens. In the Westbrook beta, 4 of the 12 students Tomas interviewed almost quit on the \"about you\" screen. Our goal is that a new student can join their first group in **under 2 minutes**.\n## New flow (4 screens)\n1. **Welcome** - a 10-second video of a study group in action\n2. **University and courses** - search your university, then pick your courses and sections\n3. **Free time** - a simple weekly grid. Tap to mark the hours you are free.\n4. **Study style** - quiet, discussion, or exam cram. This screen also asks for the notification permission (needed for Android 15).\n## What we removed\n- The \"about you\" screen (major, year, hobbies, bio)\n- The profile photo step. We now ask for a photo after the student's first group session.\n## Open questions\n- Should students be able to skip the free-time grid and fill it in later?\n- Do we need a short tutorial after onboarding, or is the first group invite enough?\n## Feedback\n- Maya: Love the shorter flow. Make sure the video loads fast on slow campus Wi-Fi.\n- Sam: The permission request on screen 4 fixes the Android 15 notification bug.\n- Wop: Please add a progress bar (1 of 4, 2 of 4...).",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "🎨",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:49:07.700Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

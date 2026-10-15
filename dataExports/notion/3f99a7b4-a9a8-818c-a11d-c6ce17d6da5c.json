@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-818c-a11d-c6ce17d6da5c",
+  "title": "Beta launch checklist - Nov 2",
+  "date": "2026-10-14T02:49:07.700Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a8818ca11dc6ce17d6da5c",
+  "text": "Owner: **Wop testwell** · Launch date: <mention-date start=\"2026-11-02\"/> at Westbrook University\n## Product\n- [x] Matching service v0.3 on staging (Daniel)\n- [ ] API response time under 1 second with 200+ students (Daniel)\n- [ ] Fix oversized groups for single-course students (Daniel)\n- [ ] Database migration on <mention-date start=\"2026-10-17\"/>, 11 PM - 1 AM ET (Daniel)\n- [ ] Fix push notifications on Android 15 (Sam)\n- [ ] New 4-screen onboarding in the app (Sam + Priya)\n- [x] Final app icon and brand colors (Priya)\n## App stores\n- [ ] Android build submitted to Google Play by <mention-date start=\"2026-10-25\"/> (Sam)\n- [ ] iOS build submitted to the App Store by <mention-date start=\"2026-10-25\"/> (Sam)\n- [ ] Store screenshots and description (Priya + Wop)\n## Beta testers\n- [ ] Beta sign-up form live on the website (Wop)\n- [ ] Migration notice sent to Westbrook beta testers on Friday (Wop)\n- [ ] Launch day email to all beta testers (Wop)\n- [ ] Tomas shares the launch in the Westbrook campus group chat\n## Risks\n- Android 15 push notification bug could delay the launch if the fix takes more than a week\n- App store review can take up to 5 days",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "🚀",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:49:07.700Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

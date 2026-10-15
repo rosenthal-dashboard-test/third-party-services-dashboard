@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-81b9-824e-c9f38da93820",
+  "title": "Harbor Seed Fund - investor notes",
+  "date": "2026-10-14T02:50:12.812Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a881b9824ec9f38da93820",
+  "text": "Author: **Maya Chen** · Contact: Lena Fischer, Principal, Harbor Seed Fund\n## Timeline\n- <mention-date start=\"2026-09-24\"/> First intro call with Lena\n- <mention-date start=\"2026-10-06\"/> Pitch to Harbor Seed Fund partners (Maya and Wop)\n- <mention-date start=\"2026-10-30\"/> Lena presents Pairly at the partner meeting\n## What they liked\n- Matching by free time and study style, not just by course\n- A clear campus-by-campus growth plan with student ambassadors\n## What they asked for\n- Beta sign-ups and weekly active students\n- How many groups actually met at least twice\n- Plan for the next two campuses\n## Numbers we sent (Westbrook beta)\n- 214 students signed up, 131 active weekly (61%)\n- 58 study groups created, 37 met at least twice\n- Next campuses: Lakeside College (January), Crestview State (March)\n## Next steps\n- [ ] Send fresh numbers after the Nov 2 launch\n- [ ] Prepare a one-page summary of the beta feedback for Lena",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "💼",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:50:12.812Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

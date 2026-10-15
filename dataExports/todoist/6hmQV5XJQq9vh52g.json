@@ -1,0 +1,20 @@
+{
+  "service": "todoist",
+  "type": "task",
+  "id": "6hmQV5XJQq9vh52g",
+  "title": "Prep agenda for Thursday team sync",
+  "date": "2026-10-22",
+  "url": "https://app.todoist.com/app/task/6hmQV5XJQq9vh52g",
+  "text": "",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "projectId": "6hmQP32HjWcpvqjg",
+    "projectName": "Inbox",
+    "dueDate": "2026-10-22",
+    "recurring": false,
+    "priority": "p4",
+    "labels": [],
+    "checked": false,
+    "addedAt": "2026-10-15T20:23:43.108Z"
+  }
+}

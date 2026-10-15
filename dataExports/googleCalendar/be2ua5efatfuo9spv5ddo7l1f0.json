@@ -1,0 +1,39 @@
+{
+  "service": "googleCalendar",
+  "type": "event",
+  "id": "be2ua5efatfuo9spv5ddo7l1f0",
+  "title": "Pairly weekly sync",
+  "date": "2026-10-01T10:00:00-04:00",
+  "url": "https://www.google.com/calendar/event?eid=YmUydWE1ZWZhdGZ1bzlzcHY1ZGRvN2wxZjBfMjAyNjEwMDFUMTQwMDAwWiB3b3B0ZXN0d2VsbEBt",
+  "text": "Weekly team meeting for Pairly (45 minutes).\n\nAttendees: Maya Chen, Daniel Ortiz, Priya Raman, Sam Okafor, Wop testwell. Tomas Rivera joins by video when there is beta feedback to share.\n\nStanding agenda:\n1. Beta launch checklist (Nov 2)\n2. Engineering updates: matching service, mobile app\n3. Design updates\n4. Westbrook beta feedback\n5. Investors and partnerships\n\nWop takes notes in a \"Weekly sync\" page in Pairly HQ (Notion).",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "calendarId": "woptestwell@gmail.com",
+    "start": "2026-10-01T10:00:00-04:00",
+    "end": "2026-10-01T10:45:00-04:00",
+    "allDay": false,
+    "timeZone": "America/New_York",
+    "location": "Pairly team video call",
+    "status": "confirmed",
+    "eventType": "DEFAULT",
+    "transparency": "opaque",
+    "organizer": "woptestwell@gmail.com",
+    "creator": "woptestwell@gmail.com",
+    "created": "2026-10-14T02:59:52Z",
+    "updated": "2026-10-15T20:51:26Z",
+    "recurrence": ["RRULE:FREQ=WEEKLY;COUNT=10;BYDAY=TH"],
+    "occurrences": [
+      "2026-10-01T10:00:00-04:00",
+      "2026-10-08T10:00:00-04:00",
+      "2026-10-15T10:00:00-04:00",
+      "2026-10-22T10:00:00-04:00",
+      "2026-10-29T10:00:00-04:00",
+      "2026-11-05T10:00:00-05:00",
+      "2026-11-12T10:00:00-05:00",
+      "2026-11-19T10:00:00-05:00",
+      "2026-11-26T10:00:00-05:00",
+      "2026-12-03T10:00:00-05:00"
+    ],
+    "reminders": "calendar default (popup, 30 minutes before)"
+  }
+}

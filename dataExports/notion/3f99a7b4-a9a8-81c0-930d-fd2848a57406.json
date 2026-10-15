@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-81c0-930d-fd2848a57406",
+  "title": "Westbrook beta feedback summary",
+  "date": "2026-10-14T02:50:12.812Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a881c0930dfd2848a57406",
+  "text": "Author: **Tomas Rivera**, Campus Ambassador, Westbrook University\nTwo rounds of interviews: 12 general beta testers and 8 students from the engineering study groups.\n## What students liked\n- Being matched with people from the same course **section**, not just the same course\n- The weekly free-time grid. Faster than coordinating in a group chat.\n- The 30-minute reminder before each session (when it works)\n- The \"exam cram\" study style, especially before midterms\n- On iOS, the app feels fast\n## What students didn't like\n- The \"about you\" screen in onboarding was too long. 4 of 12 almost quit there.\n- 5 testers on Android 15 never received notifications\n- No way to leave a group without messaging everyone\n- Groups of 5 feel too big for problem sets. 3 or 4 is better.\n- The matching screen is slow on older Android phones\n## Top feature requests\n1. Book a library study room from the app (asked in both rounds)\n2. See a group's past session times before joining\n3. Choose group size\n## Quotes\n> \"I found a calculus group in my section in like 30 seconds. That never happens.\"\n> \"I'd use it every week if I could also grab a library room.\"",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "💬",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:50:12.812Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

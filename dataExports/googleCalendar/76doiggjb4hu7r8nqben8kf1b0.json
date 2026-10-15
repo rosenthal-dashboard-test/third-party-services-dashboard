@@ -1,0 +1,28 @@
+{
+  "service": "googleCalendar",
+  "type": "event",
+  "id": "76doiggjb4hu7r8nqben8kf1b0",
+  "title": "🚀 Pairly beta launch at Westbrook University",
+  "date": "2026-11-02",
+  "url": "https://www.google.com/calendar/event?eid=NzZkb2lnZ2piNGh1N3I4bnFiZW44a2YxYjAgd29wdGVzdHdlbGxAbQ",
+  "text": "Public beta launch of Pairly at Westbrook University.\n\nLaunch day plan:\n- 8 AM: Wop sends the launch email to all beta testers\n- 8 AM: Tomas Rivera posts in the Westbrook campus group chat\n- Daniel Ortiz watches the matching service and API response times all day\n- Sam Okafor watches crash reports on Android and iOS\n- Maya Chen posts the launch announcement\n\nChecklist: \"Beta launch checklist - Nov 2\" page in Pairly HQ (Notion).",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "calendarId": "woptestwell@gmail.com",
+    "start": "2026-11-02",
+    "end": "2026-11-03",
+    "allDay": true,
+    "timeZone": "America/New_York",
+    "location": null,
+    "status": "confirmed",
+    "eventType": "DEFAULT",
+    "transparency": "transparent",
+    "organizer": "woptestwell@gmail.com",
+    "creator": "woptestwell@gmail.com",
+    "created": "2026-10-14T03:00:31Z",
+    "updated": "2026-10-15T20:51:26Z",
+    "recurrence": null,
+    "occurrences": ["2026-11-02"],
+    "reminders": "calendar default (popup, 30 minutes before)"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service": "googleCalendar",
+  "type": "event",
+  "id": "q8rit8k80buepjhn4cftng09go",
+  "title": "Harbor Seed Fund partner meeting - Lena presents Pairly",
+  "date": "2026-10-30T09:00:00-04:00",
+  "url": "https://www.google.com/calendar/event?eid=cThyaXQ4azgwYnVlcGpobjRjZnRuZzA5Z28gd29wdGVzdHdlbGxAbQ",
+  "text": "Lena Fischer presents Pairly at the Harbor Seed Fund partner meeting. We don't attend, but Maya Chen and Wop testwell should be reachable by phone in case the partners have questions.\n\nNumbers Lena has (Westbrook beta):\n- 214 sign-ups, 131 weekly active students (61%)\n- 58 study groups created, 37 met at least twice\n- Next campuses: Lakeside College (January), Crestview State (March)\n\nFollow-up: send fresh numbers right after the Nov 2 launch.",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "calendarId": "woptestwell@gmail.com",
+    "start": "2026-10-30T09:00:00-04:00",
+    "end": "2026-10-30T10:00:00-04:00",
+    "allDay": false,
+    "timeZone": "America/New_York",
+    "location": null,
+    "status": "confirmed",
+    "eventType": "DEFAULT",
+    "transparency": "transparent",
+    "organizer": "woptestwell@gmail.com",
+    "creator": "woptestwell@gmail.com",
+    "created": "2026-10-14T03:00:27Z",
+    "updated": "2026-10-15T20:51:26Z",
+    "recurrence": null,
+    "occurrences": ["2026-10-30T09:00:00-04:00"],
+    "reminders": "calendar default (popup, 30 minutes before)"
+  }
+}

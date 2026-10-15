@@ -1,0 +1,21 @@
+{
+  "service": "github",
+  "type": "issue",
+  "id": "rosenthal-dashboard-test/pairly-mobile#2",
+  "title": "Add a \"Leave group\" button",
+  "date": "2026-10-14T02:45:05Z",
+  "url": "https://github.com/rosenthal-dashboard-test/pairly-mobile/issues/2",
+  "text": "## Background\n\nWestbrook beta testers said there's no way to leave a study group without messaging everyone in the group, which feels awkward.\n\n## Proposal\n\n- Add a **Leave group** option in the group settings menu\n- Ask for confirmation: \"Leave this group? The other members won't be notified who left.\"\n- After leaving, offer to find a new group for the same course\n\nSource: beta feedback summary from Tomas Rivera.\n",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "owner": "rosenthal-dashboard-test",
+    "repo": "pairly-mobile",
+    "number": 2,
+    "state": "OPEN",
+    "labels": ["enhancement"],
+    "assignees": [],
+    "author": "rosenthal-dashboard-test",
+    "createdAt": "2026-10-14T02:45:05Z",
+    "updatedAt": "2026-10-14T02:45:05Z"
+  }
+}

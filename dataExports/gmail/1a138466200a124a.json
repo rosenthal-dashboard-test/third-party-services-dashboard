@@ -1,0 +1,25 @@
+{
+  "service": "gmail",
+  "type": "email",
+  "id": "1a138466200a124a",
+  "title": "Agenda for Thursday's weekly sync",
+  "date": "2026-10-14T02:38:19Z",
+  "url": "https://mail.google.com/mail/?authuser=woptestwell@gmail.com#all/thread-f:1878991043702690378|msg-f:1878991043702690378",
+  "text": "Hi Wop,\n\nHere's the agenda for Thursday's weekly sync (10 AM, 45 minutes). Could you take notes in Notion like last week?\n\n1. Launch checklist for Nov 2 - you (10 min)\n2. Matching service v0.3: group size fix and API speed - Daniel (10 min)\n3. Android 15 push notification bug - Sam (5 min)\n4. Onboarding redesign and final app icon - Priya (5 min)\n5. Westbrook beta feedback, including the library room booking request - Tomás will join by video (10 min)\n6. Harbor Seed Fund: Lena's partner meeting is Oct 30 - me (5 min)\n\nReminder: the database migration is Saturday night, so please don't plan any testing then.\n\nSee you Thursday,\nMaya Chen\nCo-founder & CEO, Pairly",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "threadId": "1a138466200a124a",
+    "from": "woptestwell@gmail.com",
+    "to": ["woptestwell@gmail.com"],
+    "cc": [],
+    "bcc": [],
+    "subject": "Agenda for Thursday's weekly sync",
+    "labels": ["UNREAD", "SENT", "INBOX"],
+    "messagesInThread": 1,
+    "positionInThread": 1,
+    "historyId": "3701",
+    "internalDate": "1791945499000",
+    "sizeEstimate": 2450,
+    "attachments": []
+  }
+}

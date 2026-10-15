@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-81d3-8a42-c318413fa6cd",
+  "title": "Team directory",
+  "date": "2026-10-14T02:50:28.827Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a881d38a42c318413fa6cd",
+  "text": "Maintained by **Wop testwell**\n## Core team\n- **Maya Chen** - Co-founder & CEO. Investors, partnerships, campus expansion.\n- **Daniel Ortiz** - CTO. Backend and matching service (pairly-api), database, infrastructure.\n- **Priya Raman** - Product Designer. Onboarding, brand guidelines, app store screenshots.\n- **Sam Okafor** - Mobile Developer. Android and iOS app (pairly-mobile), notifications.\n- **Wop testwell** - Project Manager. Launch checklist, weekly sync notes, beta testers, website (pairly-website).\n## Campus ambassadors\n- **Tomas Rivera** - Westbrook University. Beta tester recruiting and feedback interviews.\n- Lakeside College - open\n- Crestview State - open\n## Outside contacts\n- **Lena Fischer** - Principal, Harbor Seed Fund (potential investor)\n## Meetings\n- Weekly sync: Thursdays at 10 AM, 45 minutes. Notes go in a \"Weekly sync\" page in Pairly HQ.",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "👥",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:50:28.827Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}

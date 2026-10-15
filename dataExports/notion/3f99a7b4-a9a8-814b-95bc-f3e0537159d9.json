@@ -1,0 +1,20 @@
+{
+  "service": "notion",
+  "type": "page",
+  "id": "3f99a7b4-a9a8-814b-95bc-f3e0537159d9",
+  "title": "Campus expansion: Lakeside College & Crestview State",
+  "date": "2026-10-14T02:50:28.827Z",
+  "url": "https://app.notion.com/p/3f99a7b4a9a8814b95bcf3e0537159d9",
+  "text": "Author: **Maya Chen** · Status: Planning\n## Why these two campuses\n- **Lakeside College:** about 9,000 students, many commuters who struggle to find study partners. Launch in **January**, at the start of the spring semester.\n- **Crestview State:** about 22,000 students, large intro courses with 300+ students per section. Launch in **March**, before midterms.\n## What we learned from Westbrook\n- A campus ambassador makes the biggest difference. Tomas Rivera brought in 40 students before launch.\n- Launch right before midterms, when students are most motivated to study in groups\n- Students want library room booking. Ask each campus library early.\n## Plan for each campus\n1. Recruit one campus ambassador (Tomas is helping find candidates)\n2. Load the course catalog into pairly-api\n3. Add the campus to the beta sign-up form on pairly-website\n4. Run a 2-week private beta with 30-50 students\n5. Public launch\n## Open questions\n- Do we need a paid ambassador role, or is it a volunteer role with perks?\n- Can the matching service handle 22,000 students at Crestview State?",
+  "downloadedAt": "2026-10-15T21:44:49Z",
+  "metadata": {
+    "icon": "🗺️",
+    "workspace": "Wop testwell’s Space",
+    "parentId": "3f99a7b4-a9a8-818e-b81e-ea5dd520e58a",
+    "parentTitle": "Pairly HQ",
+    "path": "Pairly HQ",
+    "lastEditedTime": "2026-10-14T02:50:28.827Z",
+    "childPageIds": [],
+    "contentFormat": "notion-enhanced-markdown"
+  }
+}
