@@ -55,7 +55,41 @@ _TBD - describe how to use the download skill in `.claude/skills/`._
 
 ## Running the dashboard
 
-_TBD - prerequisites and the command to start the dashboard locally._
+The dashboard is a small local website in [`dashboard/`](dashboard/). It reads **only**
+the JSON files in `dataExports/` (no database, no accounts, no internet needed).
+
+**What to install:** [Node.js](https://nodejs.org/) 18 or newer. Nothing else - there are
+no packages to install (no `npm install`).
+
+**Start it** from the repository root:
+
+```bash
+node dashboard/server.js
+```
+
+Then open <http://localhost:3000> in your browser. Stop it with `Ctrl+C`.
+To use another port, set the `PORT` environment variable (for example `PORT=8080`).
+
+**How to use it:**
+
+- Type in the search box to find any text in titles, content, and (optionally) metadata
+  such as recipients, labels, or assignees. The search ignores upper/lower case and
+  accents (`tomas` finds `Tomás`). Several words must all match; use `"quotes"` for an
+  exact phrase.
+- Pick one service in the drop-down (or click its chip) to see only its items, or leave
+  **All services** to search everything at once. Each chip shows how many results that
+  service has.
+- Every result shows a colored badge with the service it comes from, its type and date,
+  the matching text highlighted, and a link to the original item. **Show full content**
+  opens the whole text and all metadata.
+- The search is saved in the address bar (for example
+  `http://localhost:3000/?q=Daniel&service=github`), so a search can be bookmarked.
+
+**New services appear automatically.** The server reads every folder inside
+`dataExports/` each time the page loads, so after a new service is downloaded (for
+example `dataExports/linear/`), just refresh the page. Files must follow
+[`localStorageFormats.md`](localStorageFormats.md); a file that is not valid JSON is
+skipped and named in the server console.
 
 ## Presentation and demo video
 

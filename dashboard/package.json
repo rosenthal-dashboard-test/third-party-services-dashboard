@@ -1,0 +1,12 @@
+{
+  "name": "third-party-services-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local dashboard that searches the data in ../dataExports/",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

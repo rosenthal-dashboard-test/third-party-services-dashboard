@@ -45,7 +45,7 @@ Start a new conversation in the repo folder and send:
 - [x] Fill Linear with **at least 10 natural items** that fit the story (see "Ideas for
       the extra services" in [test-data-story.md](test-data-story.md)).
 - [x] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
-- [ ] Tell Franco that Linear is ready.
+- [x] Tell Franco that Linear is ready.
 - [ ] End this conversation with `/clear`. The assignment requires filling the test data
       in a different conversation from the rest of the work.
 
@@ -58,16 +58,16 @@ and send:
 Do **not** read `test-data-story.md` in this part. The dashboard must work only from the
 downloaded data.
 
-- [ ] `git pull`, then read `localStorageFormats.md` and look at the files in `dataExports/`.
-- [ ] Build the dashboard in `dashboard/`. Requirements from the assignment:
+- [x] `git pull`, then read `localStorageFormats.md` and look at the files in `dataExports/`.
+- [x] Build the dashboard in `dashboard/`. Requirements from the assignment:
   - A website that runs locally and reads **only** from `dataExports/`
   - Search for any text and show the real content that matches
   - Choose one service to show content from, **or** search all services at once
   - Every result clearly shows which service it comes from
-- [ ] Keep it simple: one command to start it, no database, no accounts.
-- [ ] Test some searches that should return results from several services, for example
+- [x] Keep it simple: one command to start it, no database, no accounts.
+- [x] Test some searches that should return results from several services, for example
       a person's name that appears in emails, issues, pages, and events.
-- [ ] Write the "Running the dashboard" section of the root `README.md`: what to install
+- [x] Write the "Running the dashboard" section of the root `README.md`: what to install
       and the exact command to start it.
 - [ ] Commit and push, then tell the team. Ivan needs the dashboard for his screenshots
       and Hadar for the video.

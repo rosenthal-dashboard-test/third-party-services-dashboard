@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Third-Party Services Dashboard</h1>
+    <p id="summary" class="muted">Loading data from dataExports/…</p>
+  </header>
+
+  <form id="controls" role="search" onsubmit="return false">
+    <input id="query" type="search" placeholder="Search emails, issues, pages, events, tasks…" autocomplete="off" autofocus>
+    <select id="service" aria-label="Service">
+      <option value="">All services</option>
+    </select>
+    <label class="check"><input id="inMetadata" type="checkbox" checked> Also search metadata</label>
+  </form>
+
+  <nav id="chips" aria-label="Results per service"></nav>
+  <p id="status" class="muted" aria-live="polite"></p>
+  <ol id="results"></ol>
+
+  <script src="app.js"></script>
+</body>
+</html>
