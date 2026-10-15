@@ -11,18 +11,18 @@
 
 ## Part 0 - One-time setup
 
-- [ ] Get the test Google account password from Franco. He sends it privately, never
+- [x] Get the test Google account password from Franco. He sends it privately, never
       in a file or in the chat with Claude. The test GitHub account has no separate
       password: log in at github.com with **Continue with Google** as the test account.
-- [ ] Create a Chrome profile for the test accounts (profile icon > **Add** > **Continue
+- [x] Create a Chrome profile for the test accounts (profile icon > **Add** > **Continue
       without an account**, name it "AI-Class-Test") and sign in to Gmail there with the
       test Google account.
-- [ ] Turn off any Claude connectors linked to your personal accounts (**+** menu in the
+- [x] Turn off any Claude connectors linked to your personal accounts (**+** menu in the
       message box > **Connectors**).
-- [ ] Create your own token on the test GitHub account and save it as `GITHUB_PAT`,
+- [x] Create your own token on the test GitHub account and save it as `GITHUB_PAT`,
       following [GitHub setup](../mcp-setup.md#github---githubgithub-mcp-server-remote).
       Then fully quit and reopen the Claude app.
-- [ ] Set this repo's git identity to the test account (commands in [README.md](README.md#rules-for-everyone)).
+- [x] Set this repo's git identity to the test account (commands in [README.md](README.md#rules-for-everyone)).
 
 ## Part 1 - Extra service: ClickUp (a separate conversation, only for this)
 
