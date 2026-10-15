@@ -62,7 +62,10 @@ part. Then send:
 - [ ] When Linear and ClickUp are connected, download them the same way, with the skill
       in a new conversation, and add them to `localStorageFormats.md`.
       (Linear done 2026-10-15: 14 issues, commit 33fd472. ClickUp waits for Hadar.)
-- [ ] Commit and push, then tell Rangio that the data is ready for the dashboard.
+- [x] Commit and push, then tell Rangio that the data is ready for the dashboard.
+      (2026-10-15: Rangio saw the Linear data appear in the dashboard with no code change. Franco
+      reviewed the dashboard: 70 items from 6 services, search results match
+      `dataExports/`, and the "Running the dashboard" steps in `README.md` work.)
 
 ## Final check
 
