@@ -26,7 +26,7 @@ service, `localStorageFormats.md`, and the download skill
       in a terminal in the repo folder for this step, then exit it.
   - [x] Todoist (Ivan): connected and checked, 2026-10-15
   - [x] Linear (Rangio): connected and checked, 2026-10-15
-  - [ ] ClickUp (Hadar)
+  - [x] ClickUp (Hadar): connected and checked, 2026-10-15
 
 ## Download step (new conversation)
 
@@ -59,9 +59,10 @@ part. Then send:
       (2026-10-15: the 5 services were downloaded again with the skill and every file
       came out identical, only `downloadedAt` changed. There were no new test items, so
       the new data came from Linear, below.)
-- [ ] When Linear and ClickUp are connected, download them the same way, with the skill
+- [x] When Linear and ClickUp are connected, download them the same way, with the skill
       in a new conversation, and add them to `localStorageFormats.md`.
-      (Linear done 2026-10-15: 14 issues, commit 33fd472. ClickUp waits for Hadar.)
+      (Linear done 2026-10-15: 14 issues, commit 33fd472. ClickUp done 2026-10-15 by
+      Hadar: 12 tasks of the "Campus Expansion" folder, commit 0adc43c.)
 - [x] Commit and push, then tell Rangio that the data is ready for the dashboard.
       (2026-10-15: Rangio saw the Linear data appear in the dashboard with no code change. Franco
       reviewed the dashboard: 70 items from 6 services, search results match
