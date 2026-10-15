@@ -22,9 +22,17 @@ service, `localStorageFormats.md`, and the download skill
 - [ ] Each time a teammate says their extra service is ready: `git pull`, open a new
       session, log in to the new server (`/mcp` > the server > **Authenticate**, in the
       test Chrome profile), and ask Claude which user is logged in to check that it is
-      the test account.
+      the test account. `/mcp` does not work in the desktop app's Code tab: run `claude`
+      in a terminal in the repo folder for this step, then exit it.
+  - [x] Todoist (Ivan): connected and checked, 2026-10-15
+  - [ ] Linear (Rangio)
+  - [ ] ClickUp (Hadar)
 
-## Download step (new conversation, after all extra services are ready)
+## Download step (new conversation)
+
+Don't wait for every extra service: download the services that are already connected,
+so Rangio can start the dashboard. The missing ones are downloaded later with the skill
+(see "Check the skill").
 
 Start a new conversation with `/clear`. Do **not** read `test-data-story.md` in this
 part. Then send:
@@ -32,7 +40,7 @@ part. Then send:
 
 - [ ] Check that every service is connected to its test account. For Gmail and Google
       Calendar, list recent emails or calendars and confirm the test address.
-- [ ] Download at least 5 items from **every** service into `dataExports/<service>/`,
+- [ ] Download at least 5 items from every **connected** service into `dataExports/<service>/`,
       with all their metadata (for example, for emails: from, to, subject, date). Each
       item must be distinguishable from the others.
 - [ ] Have Claude write `localStorageFormats.md`, explaining the format of every service.
@@ -45,6 +53,8 @@ part. Then send:
 
 - [ ] `/clear`, then ask Claude to download some additional data from every service.
       Check that the new files follow the skill and `localStorageFormats.md`.
+- [ ] When Linear and ClickUp are connected, download them the same way, with the skill
+      in a new conversation, and add them to `localStorageFormats.md`.
 - [ ] Commit and push, then tell Rangio that the data is ready for the dashboard.
 
 ## Final check
