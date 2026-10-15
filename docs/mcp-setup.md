@@ -142,3 +142,33 @@ Each team member adds a section for their service below, using this template:
      `todoist` > **Authenticate**, and finish the login in the test Chrome profile.
   4. Ask Claude to check, through the server, which user is logged in (its `user-info`
      tool). It must show the test account, not your personal one.
+
+### Linear - Linear's official MCP server (`mcp.linear.app`)
+
+- Owner: Rangio Nachlieli
+- Official source: [Linear MCP server docs](https://linear.app/docs/mcp), Linear's own
+  hosted server at `https://mcp.linear.app/mcp`.
+- Auth: OAuth, already defined in `.mcp.json`. There is no token to manage.
+- Steps:
+  1. In the test Chrome profile, sign up at linear.app with **Continue with Google**
+     using the test Google account, and create a workspace named "Pairly" (team key
+     `PAI`). Skip the optional onboarding screens, including **Connect GitHub**.
+  2. Add the server to `.mcp.json`:
+     ```json
+     "linear": { "type": "http", "url": "https://mcp.linear.app/mcp" }
+     ```
+  3. `/mcp` does not work in the Code tab of the Claude desktop app, so authenticate
+     from Claude Code in a terminal opened in the repo folder (install it with
+     `irm https://claude.ai/install.ps1 | iex` if `claude` is not found, and add
+     `%USERPROFILE%\.local\bin` to your user PATH if the installer says so).
+     Run `claude`, approve the servers from `.mcp.json` when asked, then run `/mcp`,
+     choose `linear` > **Authenticate**, and finish the login in the test Chrome profile.
+  4. Ask Claude, through the server, which Linear user is logged in. It must show the
+     test account and the "Pairly" workspace.
+- Troubleshooting:
+  - `/mcp` lists only claude.ai connectors and none of the project servers: the
+    `.mcp.json` servers were not approved. Exit Claude, run
+    `claude mcp reset-project-choices`, start `claude` again, and choose **Enable selected**.
+  - The login page asks you to **Create a workspace**: you are logged in to Linear with
+    an account that has no workspace (often the wrong browser profile). Check the account
+    before creating anything.
