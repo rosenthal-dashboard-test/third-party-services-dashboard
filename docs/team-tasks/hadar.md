@@ -46,7 +46,7 @@ Start a new conversation in the repo folder and send:
 - [x] Fill ClickUp with **at least 10 natural items** that fit the story (see "Ideas for
       the extra services" in [test-data-story.md](test-data-story.md)).
 - [x] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
-- [ ] Tell Franco that ClickUp is ready.
+- [x] Tell Franco that ClickUp is ready.
 - [ ] End this conversation with `/clear`. The assignment requires filling the test data
       in a different conversation from the rest of the work.
 
