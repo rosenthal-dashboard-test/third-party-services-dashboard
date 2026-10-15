@@ -14,11 +14,12 @@ dataExports/
 ├── notion/           one file per page
 ├── googleCalendar/   one file per event (a recurring event is one file)
 ├── todoist/          one file per task
-└── linear/           one file per issue
+├── linear/           one file per issue
+└── clickUp/          one file per task
 ```
 
-Each service has its own folder, named in camelCase. New services (ClickUp, ...) get
-their own folder the same way (see [Adding a new service](#adding-a-new-service)).
+Each service has its own folder, named in camelCase. New services get their own folder
+the same way (see [Adding a new service](#adding-a-new-service)).
 
 ## Common format
 
@@ -27,7 +28,7 @@ order:
 
 | Key | Type | Meaning |
 |---|---|---|
-| `service` | string | Folder name of the service (`gmail`, `github`, `notion`, `googleCalendar`, `todoist`, `linear`) |
+| `service` | string | Folder name of the service (`gmail`, `github`, `notion`, `googleCalendar`, `todoist`, `linear`, `clickUp`) |
 | `type` | string | Kind of item: `email`, `issue`, `page`, `event`, `task` |
 | `id` | string | The service's own ID for the item. Unique within the service. |
 | `title` | string | Short human-readable name (subject, issue title, page title, event name, task name) |
@@ -98,6 +99,7 @@ Example (Gmail, `text` shortened):
 | Google Calendar | When the event starts (first occurrence for a recurring event) |
 | Todoist | The due date |
 | Linear | When the issue was created |
+| ClickUp | The due date (a full timestamp, because ClickUp stores a time with it) |
 
 ## Gmail
 
@@ -248,6 +250,39 @@ Example (Gmail, `text` shortened):
 | `dueDate` | `YYYY-MM-DD`, or `null` |
 | `createdAt`, `updatedAt` | UTC timestamps |
 | `startedAt`, `completedAt`, `canceledAt` | When the issue moved to started, done or canceled, UTC, or `null` |
+
+## ClickUp
+
+- **Source:** ClickUp's official MCP server (`.mcp.json`, server `clickup`), tools
+  `clickup_get_workspace_hierarchy`, `clickup_filter_tasks` and `clickup_get_task`.
+- **What is downloaded:** every task in the folder "Campus Expansion" (space "Team
+  Space"), including closed ones. Its lists are "Lakeside College - January launch",
+  "Crestview State - March launch" and "Expansion playbook". The lists ClickUp creates
+  in every new workspace ("Project 1", "Project 2", "Get Started with ClickUp") are left
+  out on purpose.
+- **File name:** `<id>.json`, for example `86bck4zyj.json`.
+- `id` = ClickUp task ID. `title` = task name. `text` = task description in Markdown
+  (`markdown_description`, `""` when the task has none). `url` = `https://app.clickup.com/t/<id>`.
+- ClickUp returns dates as milliseconds since 1970. They are stored as UTC ISO 8601
+  timestamps (`1795165200000` → `2026-11-20T09:00:00.000Z`).
+- All test tasks are created by the test account (ClickUp user name "Rosenthal").
+  People in the story (Maya, Daniel, Tomas, ...) are named in `text`.
+
+| `metadata` key | Meaning |
+|---|---|
+| `space`, `spaceId` | Space the task belongs to |
+| `folder`, `folderId` | Folder (`Campus Expansion`) |
+| `list`, `listId` | List inside the folder |
+| `status` | Status name (`to do`, `in progress`, `complete`, ...) |
+| `priority` | `urgent`, `high`, `normal`, `low`, or `null` |
+| `assignees` | Emails of the assigned users |
+| `creator` | User name of the creator |
+| `tags` | Tag names |
+| `dueDate`, `startDate` | UTC timestamps, or `null` |
+| `dateCreated`, `dateUpdated`, `dateClosed` | UTC timestamps (`dateClosed` is `null` while open) |
+| `timeEstimate`, `timeSpent` | Milliseconds, as ClickUp gives them (`null` / `0` when not used) |
+| `parentId` | Parent task ID for a subtask, or `null` |
+| `subtasks`, `checklists`, `dependencies`, `linkedTasks`, `attachments`, `customFields` | As ClickUp returns them (all empty for the test data) |
 
 ## Adding a new service
 

@@ -1,6 +1,6 @@
 ---
 name: download-service-data
-description: Download test data from this project's third-party services (Gmail, GitHub, Notion, Google Calendar, Todoist, Linear, and new ones such as ClickUp) through their official MCP servers, and store it in dataExports/<service>/ in the format of localStorageFormats.md. Use whenever asked to download, export, refresh or add data from any service, or to add a new service to dataExports/.
+description: Download test data from this project's third-party services (Gmail, GitHub, Notion, Google Calendar, Todoist, Linear, ClickUp, and new ones) through their official MCP servers, and store it in dataExports/<service>/ in the format of localStorageFormats.md. Use whenever asked to download, export, refresh or add data from any service, or to add a new service to dataExports/.
 ---
 
 # Download service data
@@ -16,7 +16,7 @@ disagrees with this skill, follow it.
   Never download real or personal data, and never write passwords, tokens or API keys
   into any file.
 - **Only the test accounts.** Use the project MCP servers in `.mcp.json` (`github`,
-  `notion`, `todoist`, `linear`) and Claude's Gmail and Google Calendar connectors. Do **not** use
+  `notion`, `todoist`, `linear`, `clickup`) and Claude's Gmail and Google Calendar connectors. Do **not** use
   any other claude.ai connector, for example a claude.ai Notion connector: it may be
   linked to someone's personal account.
 - **Check the account before reading anything** (step 1). If a service is logged in
@@ -36,6 +36,7 @@ disagrees with this skill, follow it.
    | Todoist | `user-info` → email `woptestwell@gmail.com` |
    | Linear | `get_user` with `me` → email `woptestwell@gmail.com`, and `get_workspace` → name `Pairly` |
    | Google Calendar | `list_calendars` → a calendar with id `woptestwell@gmail.com` |
+   | ClickUp | `clickup_get_workspace_members` → only member has email `woptestwell@gmail.com` |
    | Gmail | `search_threads` (`pageSize` 3, `view` `THREAD_VIEW_METADATA_ONLY`) → `toRecipients` is `woptestwell@gmail.com` |
 
    A service whose tools are missing is not connected: skip it and say so at the end.
@@ -136,7 +137,28 @@ gap with non-test data.
   `startedAt`, `completedAt`, `canceledAt`. The `sla*` fields, `gitBranchName` and the
   team, project and user IDs are left out.
 
-## Adding a new service (ClickUp, ...)
+### ClickUp → `dataExports/clickUp/`
+
+- `clickup_get_workspace_hierarchy` to find the folder "Campus Expansion" (space "Team
+  Space"). Never include the default lists "Project 1", "Project 2" and "Get Started
+  with ClickUp".
+- `clickup_filter_tasks` with `folder_ids: [<Campus Expansion id>]`,
+  `include_closed: true`. Follow `next_page` while `has_more` is true.
+- `clickup_get_task` for each task with `include: ["description", "checklists",
+  "custom_fields", "subtasks", "dependencies", "linked_tasks", "attachments"]`.
+- Folder and `service` are `clickUp` (camelCase; the dashboard knows this name).
+- File `<id>.json`. `title` = `name`, `date` = `due_date` (`date_created` if none),
+  `url` = `url`, `text` = `markdown_description` (`""` if none).
+- Convert every millisecond timestamp to UTC ISO 8601, for example with
+  `node -e 'console.log(new Date(1795165200000).toISOString())'`.
+- `metadata`: `space` (name from the hierarchy), `spaceId`, `folder`, `folderId`,
+  `list`, `listId`, `status`, `priority` (= `priority.priority`, or `null`),
+  `assignees` (emails), `creator` (= `creator.username`), `tags` (names), `dueDate`,
+  `startDate`, `dateCreated`, `dateUpdated`, `dateClosed`, `timeEstimate`, `timeSpent`,
+  `parentId` (= `parent`), `subtasks`, `checklists`, `dependencies`, `linkedTasks`,
+  `attachments`, `customFields`. Colors, watchers and `text_content` are left out.
+
+## Adding a new service (Jira, ...)
 
 1. Make sure its official MCP server is in `.mcp.json` and logged in to the test
    account (the user does the login), and check the account as in step 1.

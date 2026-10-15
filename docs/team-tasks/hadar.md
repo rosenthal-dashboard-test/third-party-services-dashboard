@@ -47,7 +47,7 @@ Start a new conversation in the repo folder and send:
       the extra services" in [test-data-story.md](test-data-story.md)).
 - [x] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
 - [x] Tell Franco that ClickUp is ready.
-- [ ] End this conversation with `/clear`. The assignment requires filling the test data
+- [x] End this conversation with `/clear`. The assignment requires filling the test data
       in a different conversation from the rest of the work.
 
 ## Part 2 - Demo video (new conversation)

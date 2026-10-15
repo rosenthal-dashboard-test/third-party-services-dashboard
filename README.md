@@ -27,7 +27,7 @@ across all services at once.
 | Google Calendar | Google's Calendar MCP (`calendarmcp.googleapis.com`), via Claude's Google Calendar connector ([setup](docs/mcp-setup.md#google-calendar---claudes-google-calendar-connector-googles-official-calendar-mcp-server)) | `dataExports/googleCalendar/` |
 | Todoist | [Doist's Todoist MCP](https://ai.todoist.net/mcp) ([setup](docs/mcp-setup.md#todoist---doists-official-todoist-mcp-server)) | `dataExports/todoist/` |
 | Linear | [Linear's MCP server](https://linear.app/docs/mcp) (`mcp.linear.app`) ([setup](docs/mcp-setup.md#linear---linears-official-mcp-server-mcplinearapp)) | `dataExports/linear/` |
-| ClickUp | [ClickUp's MCP server](https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server) (`mcp.clickup.com`) ([setup](docs/mcp-setup.md#clickup---clickups-official-mcp-server-mcpclickupcom)) | `dataExports/clickup/` |
+| ClickUp | [ClickUp's MCP server](https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server) (`mcp.clickup.com`) ([setup](docs/mcp-setup.md#clickup---clickups-official-mcp-server-mcpclickupcom)) | `dataExports/clickUp/` |
 
 ## Repository structure
 
