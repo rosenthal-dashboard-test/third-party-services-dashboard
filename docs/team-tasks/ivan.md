@@ -44,7 +44,7 @@ Start a new conversation in the repo folder and send:
       the template there, and fill in the Todoist row and your row in the root `README.md`.
 - [x] Fill Todoist with **at least 10 natural items** that fit the story (see "Ideas for
       the extra services" in [test-data-story.md](test-data-story.md)).
-- [ ] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
+- [x] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
 - [ ] Tell Franco that Todoist is ready.
 - [ ] End this conversation with `/clear`. The assignment requires filling the test data
       in a different conversation from the rest of the work.
@@ -55,9 +55,9 @@ You can start the slides any time. The dashboard screenshots have to wait until 
 finishes the dashboard. Start a new conversation and send:
 > Read docs/team-tasks/ivan.md and guide me through Part 2.
 
-- [ ] `git pull` and read the root `README.md`, `docs/mcp-setup.md`, and (once it exists)
+- [x] `git pull` and read the root `README.md`, `docs/mcp-setup.md`, and (once it exists)
       `localStorageFormats.md`.
-- [ ] Create the presentation in `presentation/` (for example `presentation/third-party-services-dashboard.pptx`). Suggested slides:
+- [x] Create the presentation in `presentation/` (for example `presentation/third-party-services-dashboard.pptx`). Suggested slides:
   1. Title, team members, course
   2. What the project does: services -> official MCP servers -> Claude Code -> `dataExports/` -> local dashboard
   3. The services and their official MCP servers, and who did each extra service
