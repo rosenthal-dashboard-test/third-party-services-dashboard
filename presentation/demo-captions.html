@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo captions</title>
+<style>
+  :root { --bg: #0f172a; --fg: #f8fafc; --muted: #94a3b8; --accent: #7b3fe4; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .card { display: none; height: 100%; box-sizing: border-box; padding: 8vh 10vw;
+    flex-direction: column; justify-content: center; }
+  .card.on { display: flex; }
+  .step { color: var(--accent); font-weight: 700; font-size: 2.2vw; letter-spacing: .05em;
+    text-transform: uppercase; margin-bottom: 2vh; }
+  h1 { font-size: 5vw; line-height: 1.1; margin: 0 0 3vh; }
+  p { font-size: 2.4vw; line-height: 1.4; color: var(--muted); margin: 0 0 1.5vh; max-width: 70ch; }
+  .hint { position: fixed; bottom: 2vh; right: 3vw; font-size: 12px; color: #475569; }
+</style>
+</head>
+<body>
+<section class="card on">
+  <div class="step">Third-Party Services Dashboard</div>
+  <h1>One search box for all your cloud tools</h1>
+  <p>Claude Code connects to 7 services (Gmail, GitHub, Notion, Google Calendar, Todoist, Linear, ClickUp) through their official MCP servers.</p>
+  <p>It downloads the data into local JSON files, and a local dashboard searches all of it at once.</p>
+</section>
+<section class="card">
+  <div class="step">Step 1</div>
+  <h1>Log in to ClickUp with the test account</h1>
+  <p>The test workspace holds a startup's "Campus Expansion" plan.</p>
+</section>
+<section class="card">
+  <div class="step">Step 2</div>
+  <h1>Ask Claude Code to download the ClickUp data</h1>
+  <p>The project skill in .claude/skills/ uses ClickUp's official MCP server and saves one JSON file per task in dataExports/clickUp/.</p>
+</section>
+<section class="card">
+  <div class="step">Step 3</div>
+  <h1>Start the dashboard and search</h1>
+  <p>node dashboard/server.js → http://localhost:3000</p>
+  <p>First ClickUp only, then every service at once.</p>
+</section>
+<section class="card">
+  <div class="step">Summary</div>
+  <h1>Login → download → search</h1>
+  <p>Official MCP servers, test accounts only, data stored locally in dataExports/.</p>
+  <p>Code, data and docs: github.com/rosenthal-dashboard-test/third-party-services-dashboard</p>
+</section>
+<div class="hint">→ / Space: next · ←: back</div>
+<script>
+  const cards = [...document.querySelectorAll(".card")];
+  let i = 0;
+  function show(n) { i = Math.max(0, Math.min(cards.length - 1, n));
+    cards.forEach((c, k) => c.classList.toggle("on", k === i)); }
+  addEventListener("keydown", (e) => {
+    if (["ArrowRight", " ", "PageDown"].includes(e.key)) { e.preventDefault(); show(i + 1); }
+    if (["ArrowLeft", "PageUp"].includes(e.key)) { e.preventDefault(); show(i - 1); }
+  });
+  addEventListener("click", () => show(i + 1));
+</script>
+</body>
+</html>

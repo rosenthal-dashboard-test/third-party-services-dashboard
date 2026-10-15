@@ -59,19 +59,19 @@ The assignment asks for a video of **3 minutes or less** that shows:
 logging in to at least one real service, downloading its data with Claude Code,
 starting the local dashboard, and searching for something that returns results.
 
-- [ ] `git pull` and check that the download skill (in `.claude/skills/`) and the
+- [x] `git pull` and check that the download skill (in `.claude/skills/`) and the
       dashboard both work on your computer.
-- [ ] Write a short script, about 3 minutes in total:
+- [x] Write a short script, about 3 minutes in total:
   1. (15 s) What the project is
   2. (40 s) Log in to ClickUp (or another service) in the test Chrome profile and show the test items
   3. (50 s) In Claude Code, ask it to download that service's data, then show the new files in `dataExports/`
   4. (50 s) Start the dashboard and search one service, then all services at once
   5. (15 s) Wrap-up
-- [ ] Record the screen (Windows: Snipping Tool > Record, or Win + Alt + R). Before
+- [x] Record the screen (Windows: Snipping Tool > Record, or Win + Alt + R). Before
       recording, close anything personal and check that no password or token is visible.
-- [ ] GitHub rejects files over 100 MB. If the video is bigger, compress it or upload it
+- [x] GitHub rejects files over 100 MB. If the video is bigger, compress it or upload it
       as an unlisted YouTube video and put the link in `presentation/`.
-- [ ] Put the video (or the link) in `presentation/`, commit and push, then tell the team.
+- [x] Put the video (or the link) in `presentation/`, commit and push, then tell the team.
 
 ## Part 3 - Final README (same or new conversation)
 
