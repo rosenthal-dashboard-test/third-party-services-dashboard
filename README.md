@@ -14,7 +14,7 @@ across all services at once.
 |---|---|---|
 | Franco Busso | Test accounts, MCP setup, test data | Google Calendar |
 | Rangio Nachlieli | _TBD_ | _TBD_ |
-| Ivan Zirlinger | _TBD_ | _TBD_ |
+| Ivan Zirlinger | PowerPoint | Todoist |
 | Hadar Lavinsky | _TBD_ | _TBD_ |
 
 ## Services
@@ -25,7 +25,7 @@ across all services at once.
 | GitHub | [github/github-mcp-server](https://github.com/github/github-mcp-server) (remote) | `dataExports/github/` |
 | Notion | [Notion MCP](https://developers.notion.com/docs/mcp) (`mcp.notion.com`) | `dataExports/notion/` |
 | Google Calendar | Google's Calendar MCP (`calendarmcp.googleapis.com`), via Claude's Google Calendar connector ([setup](docs/mcp-setup.md#google-calendar---claudes-google-calendar-connector-googles-official-calendar-mcp-server)) | `dataExports/googleCalendar/` |
-| _TBD_ | _TBD_ | _TBD_ |
+| Todoist | [Doist's Todoist MCP](https://ai.todoist.net/mcp) ([setup](docs/mcp-setup.md#todoist---doists-official-todoist-mcp-server)) | `dataExports/todoist/` |
 | _TBD_ | _TBD_ | _TBD_ |
 | _TBD_ | _TBD_ | _TBD_ |
 

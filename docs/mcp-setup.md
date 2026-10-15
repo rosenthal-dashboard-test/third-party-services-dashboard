@@ -125,3 +125,20 @@ Each team member adds a section for their service below, using this template:
   5. Ask Claude to list your calendars. The only calendar must be the test address. If
      you see your personal address, stop and repeat step 2.
 - Note: the test calendar's time zone is UTC. Events are created in `America/New_York`.
+
+### Todoist - Doist's official Todoist MCP server
+
+- Owner: Ivan Zirlinger
+- Official source: `https://ai.todoist.net/mcp`, Doist's own hosted MCP server.
+- Auth: OAuth, already defined in `.mcp.json`. There is no token to manage.
+- Steps:
+  1. In the test Chrome profile, sign up at todoist.com with **Continue with Google**
+     using the test Google account.
+  2. Add the server to `.mcp.json`:
+     ```json
+     "todoist": { "type": "http", "url": "https://ai.todoist.net/mcp" }
+     ```
+  3. Start a new Claude Code session so the server loads, then run `/mcp`, choose
+     `todoist` > **Authenticate**, and finish the login in the test Chrome profile.
+  4. Ask Claude to check, through the server, which user is logged in (its `user-info`
+     tool). It must show the test account, not your personal one.

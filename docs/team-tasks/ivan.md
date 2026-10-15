@@ -11,38 +11,38 @@
 
 ## Part 0 - One-time setup
 
-- [ ] Get the test Google account password from Franco. He sends it privately, never
+- [x] Get the test Google account password from Franco. He sends it privately, never
       in a file or in the chat with Claude. The test GitHub account has no separate
       password: log in at github.com with **Continue with Google** as the test account.
-- [ ] Create a Chrome profile for the test accounts (profile icon > **Add** > **Continue
+- [x] Create a Chrome profile for the test accounts (profile icon > **Add** > **Continue
       without an account**, name it "AI-Class-Test") and sign in to Gmail there with the
       test Google account.
-- [ ] Turn off any Claude connectors linked to your personal accounts (**+** menu in the
+- [x] Turn off any Claude connectors linked to your personal accounts (**+** menu in the
       message box > **Connectors**).
-- [ ] Create your own token on the test GitHub account and save it as `GITHUB_PAT`,
+- [x] Create your own token on the test GitHub account and save it as `GITHUB_PAT`,
       following [GitHub setup](../mcp-setup.md#github---githubgithub-mcp-server-remote).
       Then fully quit and reopen the Claude app.
-- [ ] Set this repo's git identity to the test account (commands in [README.md](README.md#rules-for-everyone)).
+- [x] Set this repo's git identity to the test account (commands in [README.md](README.md#rules-for-everyone)).
 
 ## Part 1 - Extra service: Todoist (a separate conversation, only for this)
 
 Start a new conversation in the repo folder and send:
 > Read docs/team-tasks/ivan.md and docs/team-tasks/test-data-story.md, and guide me through Part 1.
 
-- [ ] Confirm the service with the team. Todoist is the suggestion. If you prefer another
+- [x] Confirm the service with the team. Todoist is the suggestion. If you prefer another
       one, it must have an **official** MCP server made by the company itself, a free
       plan, and not be taken by someone else.
-- [ ] In the test Chrome profile, sign up at todoist.com with **Continue with Google**
+- [x] In the test Chrome profile, sign up at todoist.com with **Continue with Google**
       using the test Google account.
-- [ ] Add Doist's official server to `.mcp.json`:
+- [x] Add Doist's official server to `.mcp.json`:
       `"todoist": { "type": "http", "url": "https://ai.todoist.net/mcp" }`
 - [ ] Open a new session so the server loads, then log in to it: send `/mcp`, choose
       `todoist` > **Authenticate**, and finish the login in the test Chrome profile.
-- [ ] Ask Claude to check, through the Todoist server, which user is logged in. It must
+- [x] Ask Claude to check, through the Todoist server, which user is logged in. It must
       be the test account.
-- [ ] Document it: add a "Todoist" section to [docs/mcp-setup.md](../mcp-setup.md) using
+- [x] Document it: add a "Todoist" section to [docs/mcp-setup.md](../mcp-setup.md) using
       the template there, and fill in the Todoist row and your row in the root `README.md`.
-- [ ] Fill Todoist with **at least 10 natural items** that fit the story (see "Ideas for
+- [x] Fill Todoist with **at least 10 natural items** that fit the story (see "Ideas for
       the extra services" in [test-data-story.md](test-data-story.md)).
 - [ ] Commit and push `.mcp.json`, `docs/mcp-setup.md`, and `README.md`.
 - [ ] Tell Franco that Todoist is ready.
