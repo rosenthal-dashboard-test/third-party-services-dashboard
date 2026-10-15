@@ -25,7 +25,7 @@ service, `localStorageFormats.md`, and the download skill
       the test account. `/mcp` does not work in the desktop app's Code tab: run `claude`
       in a terminal in the repo folder for this step, then exit it.
   - [x] Todoist (Ivan): connected and checked, 2026-10-15
-  - [ ] Linear (Rangio)
+  - [x] Linear (Rangio): connected and checked, 2026-10-15
   - [ ] ClickUp (Hadar)
 
 ## Download step (new conversation)
@@ -54,10 +54,14 @@ part. Then send:
 
 ## Check the skill (new conversation)
 
-- [ ] `/clear`, then ask Claude to download some additional data from every service.
+- [x] `/clear`, then ask Claude to download some additional data from every service.
       Check that the new files follow the skill and `localStorageFormats.md`.
+      (2026-10-15: the 5 services were downloaded again with the skill and every file
+      came out identical, only `downloadedAt` changed. There were no new test items, so
+      the new data came from Linear, below.)
 - [ ] When Linear and ClickUp are connected, download them the same way, with the skill
       in a new conversation, and add them to `localStorageFormats.md`.
+      (Linear done 2026-10-15: 14 issues, commit 33fd472. ClickUp waits for Hadar.)
 - [ ] Commit and push, then tell Rangio that the data is ready for the dashboard.
 
 ## Final check
