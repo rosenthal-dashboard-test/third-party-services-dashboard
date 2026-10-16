@@ -78,7 +78,7 @@ starting the local dashboard, and searching for something that returns results.
 Send:
 > Read docs/team-tasks/hadar.md and guide me through Part 3.
 
-- [ ] `git pull`, then update the root `README.md` so someone who has never heard of the
+- [x] `git pull`, then update the root `README.md` so someone who has never heard of the
       project understands it:
   - What the project is and what each part does
   - The team table: each person's job and extra service
@@ -86,5 +86,5 @@ Send:
   - "Downloading data": how to use the skill in `.claude/skills/`
   - "Running the dashboard": check that Rangio's section works when you follow it exactly
   - Where to find the presentation and the video
-- [ ] Remove all the `_TBD_` placeholders.
-- [ ] Commit and push, then tell the team.
+- [x] Remove all the `_TBD_` placeholders.
+- [x] Commit and push, then tell the team.

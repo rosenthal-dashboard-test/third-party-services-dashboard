@@ -8,14 +8,39 @@ across all services at once.
 > All accounts used here are throwaway **test accounts** created for this project.
 > No personal data, passwords, or tokens are stored in this repository.
 
+## How it works
+
+The project has three parts, and each one only talks to the next:
+
+1. **Cloud services with test data.** Seven services (Gmail, GitHub, Notion, Google
+   Calendar, Todoist, Linear, ClickUp) hold made-up data about "Pairly", a fictional
+   startup that matches university students into study groups. Each service is
+   logged in with the same test Google account.
+2. **Downloading with Claude Code.** Claude Code connects to each service through the
+   service's own **official MCP server** (listed in [`.mcp.json`](.mcp.json)). A project
+   skill, [`download-service-data`](.claude/skills/download-service-data/SKILL.md), tells
+   Claude how to fetch the items and save them as JSON files in `dataExports/<service>/`.
+   The file format is documented in [`localStorageFormats.md`](localStorageFormats.md).
+3. **The local dashboard.** A small website in [`dashboard/`](dashboard/) reads only the
+   files in `dataExports/` and lets you search one service or all of them at once.
+   It needs no internet and no accounts.
+
+```
+Cloud service ──(official MCP server)──> Claude Code + download skill
+      ──> dataExports/<service>/*.json ──> local dashboard (search)
+```
+
 ## Team
 
-| Member | Core responsibility | Extra service |
+| Member | What they did | Extra service |
 |---|---|---|
-| Franco Busso | Test accounts, MCP setup, test data | Google Calendar |
-| Rangio Nachlieli | Dashboard website | Linear |
-| Ivan Zirlinger | PowerPoint | Todoist |
-| Hadar Lavinsky | Demo video and final README | ClickUp |
+| Franco Busso | Test accounts and test data, MCP setup, downloaded every service, wrote `localStorageFormats.md` and the download skill | Google Calendar |
+| Rangio Nachlieli | Dashboard website (`dashboard/`) | Linear |
+| Ivan Zirlinger | PowerPoint (`presentation/`) | Todoist |
+| Hadar Lavinsky | ClickUp setup and download, demo video, final README | ClickUp |
+
+Each member also owns one extra service, with its own official MCP server, test data,
+and setup notes in [docs/mcp-setup.md](docs/mcp-setup.md).
 
 ## Services
 
@@ -51,7 +76,37 @@ across all services at once.
 
 ## Downloading data
 
-_TBD - describe how to use the download skill in `.claude/skills/`._
+Data is downloaded by Claude Code with the project skill
+[`download-service-data`](.claude/skills/download-service-data/SKILL.md) in
+`.claude/skills/`. You don't run it as a command: you ask Claude in plain language and
+it loads the skill by itself.
+
+1. Open Claude Code **in the repository folder**, so it loads `CLAUDE.md`, `.mcp.json`
+   and the skill. Make sure the MCP servers are logged in to the test accounts (see
+   [Setup](#setup)).
+2. Ask for what you need, for example:
+   - *"Download the data from every service."*
+   - *"Refresh the ClickUp data in dataExports/clickUp/."*
+   - *"Download any new Linear issues."*
+3. Claude then follows the skill:
+   - checks that each service is logged in to the **test** account, and stops if not;
+   - downloads only the project's test items (each service's filter is in the skill);
+   - writes **one JSON file per item** in `dataExports/<service>/`, in the format of
+     [`localStorageFormats.md`](localStorageFormats.md). Downloading an item again
+     overwrites its file, so there are no duplicates;
+   - runs the checker and reports how many items each service has.
+
+You can also run the checker yourself at any time:
+
+```bash
+python3 -I .claude/skills/download-service-data/scripts/check_exports.py dataExports
+```
+
+**Adding a new service:** add its official MCP server to `.mcp.json`, log in, and ask
+Claude to "add <service> to dataExports". The skill's "Adding a new service" section
+explains how to choose the folder name and format, and asks Claude to document the
+new service in `localStorageFormats.md` and add a recipe to the skill. The dashboard
+shows the new folder automatically.
 
 ## Running the dashboard
 
@@ -93,8 +148,15 @@ skipped and named in the server console.
 
 ## Presentation and demo video
 
-See [`presentation/`](presentation/). GitHub rejects files larger than 100 MB, so the
-video must stay under that size (or be linked instead of committed).
+Everything is in [`presentation/`](presentation/):
+
+| File | What it is |
+|---|---|
+| [`third-party-services-dashboard.pptx`](presentation/third-party-services-dashboard.pptx) | The PowerPoint presentation |
+| [`demo-video.mp4`](presentation/demo-video.mp4) | Demo video (1:29) |
+| [`demo-video-script.md`](presentation/demo-video-script.md) | Script used to record the video |
+| [`demo-captions.html`](presentation/demo-captions.html) | Caption cards shown in the video (open in a browser, → for next) |
+| [`screenshots/`](presentation/screenshots/) | Screenshots of the original test data in each service |
 
 ## Security
 
